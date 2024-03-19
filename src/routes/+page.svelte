@@ -11,28 +11,7 @@
     <div class="banner h-10 bg-black text-center text-white py-2">
         <p>Important Text Here</p>
     </div>
-    <header class="px-4 lg:px-6 h-14 flex items-center">
-        <a class="flex items-center justify-center" href="#" rel="ugc">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-                <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
-            </svg>
-            <span class="sr-only">Burger Brothers</span>
-        </a>
-        <nav class="ml-auto flex gap-4 sm:gap-6">
-            <a class="text-sm font-medium hover:underline underline-offset-4" href="#" rel="ugc">
-                Menu
-            </a>
-            <a class="text-sm font-medium hover:underline underline-offset-4" href="#" rel="ugc">
-                Locations
-            </a>
-            <a class="text-sm font-medium hover:underline underline-offset-4" href="#" rel="ugc">
-                About Us
-            </a>
-            <a class="text-sm font-medium hover:underline underline-offset-4" href="#" rel="ugc">
-                Contact
-            </a>
-        </nav>
-    </header>
+    
     <main class="flex-1">
         <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48">
             <div class="container flex flex-col items-center justify-center space-y-4 px-4 md:px-6">
