@@ -8,6 +8,9 @@
 // https://v0.dev/t/NTp0OzPUCg9
 -->
 <div class="flex flex-col min-h-[100dvh]">
+    <div class="banner h-10 bg-black text-center text-white py-2">
+        <p>Important Text Here</p>
+    </div>
     <header class="px-4 lg:px-6 h-14 flex items-center">
         <a class="flex items-center justify-center" href="#" rel="ugc">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
@@ -38,10 +41,14 @@
                         Burger Brothers
                     </h1>
                     <p class="mx-auto max-w-[400px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 font">
-                        Premium ingredients. Gourmet flavors. The perfect burger.
+                        Premium ingredients. Gourmet flavors. The perfect burger. Made your way.
                     </p>
                 </div>
                 <img src="/placeholder.svg" width="600" height="400" alt="Hero" class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center">
+                <section>
+                    <button class="text-white bg-black p-2 rounded-md">Order Online</button>
+                    <button class="outline outline-black outline-1 p-2 rounded-md">Full Menu</button>
+                </section>
             </div>
         </section>
         <section class="w-full py-12 md:py-24 lg:py-32 border-t">
@@ -80,7 +87,7 @@
             </div>
         </section>
     </main>
-    <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+    <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-black text-white">
         <div class="flex items-center gap-2">
             <a class="flex items-center gap-2 text-sm hover:underline underline-offset-4" href="#" rel="ugc">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
@@ -113,7 +120,7 @@
 </div>
 
 <style>
-    p {
+    p, button {
         font-family: 'Comfortaa Variable', sans-serif;
         font-size: 16px;
         line-height: 24px;
