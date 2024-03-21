@@ -9,7 +9,7 @@
 -->
 <div class="flex flex-col min-h-[100dvh]">
     <div class="banner h-10 bg-black text-center text-white py-2">
-        <p>Important Text Here</p>
+        <p>Homepage Banner: Important Text Here</p>
     </div>
     
     <main class="flex-1">
@@ -20,7 +20,7 @@
                         Burger Brothers
                     </h1>
                     <p class="mx-auto max-w-[400px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 font">
-                        Premium ingredients. Gourmet flavors. The perfect burger. Made your way.
+                        Premium ingredients all day. Gourmet flavors. The perfect burger. Made your way.
                     </p>
                 </div>
                 <img src="/placeholder.svg" width="600" height="400" alt="Hero" class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center">
@@ -32,12 +32,13 @@
         </section>
         <section class="w-full py-12 md:py-24 lg:py-32 border-t">
             <div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
+                <span class="pill bg-black text-white w-fit m-auto px-3 rounded-xl ">Specials</span>
                 <div class="space-y-3">
                     <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                         Seasonal Menu
                     </h2>
                     <p class="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                        Experience the workflow the best frontend teams love.
+                        Limited timing creations. We in parallel with nature; many of our beautiful creations are seasonal, not to be abused or imitated.
                     </p>
                 </div>
                 <div class="mx-auto grid max-w-5xl items-start gap-6 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-3">

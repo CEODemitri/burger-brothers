@@ -4,9 +4,12 @@
   
   <header class="px-4 lg:px-6 h-14 flex items-center">
     <a class="flex items-center justify-center" href="/" rel="ugc">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-            <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
-        </svg>
+        <figure>
+            <img src="../logo.png" alt="" class="w-14">
+            <figcaption>
+                <h1 class="text-2xl font-bold text-gray-900 sr-only">UGC</h1>
+            </figcaption>
+        </figure>
         <span class="sr-only">Burger Brothers</span>
     </a>
     <nav class="ml-auto flex gap-4 sm:gap-6">
@@ -14,10 +17,10 @@
             Menu
         </a>
         <a class="text-sm font-medium hover:underline underline-offset-4" href="/Locations" rel="ugc">
-            Locations
+            Visit Us
         </a>
         <a class="text-sm font-medium hover:underline underline-offset-4" href="#" rel="ugc">
-            About Us
+            History
         </a>
         <a class="text-sm font-medium hover:underline underline-offset-4" href="#" rel="ugc">
             Contact
