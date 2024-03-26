@@ -2,6 +2,15 @@
     // Supports weights 300-700
     import '@fontsource-variable/comfortaa';
     import '@fontsource/fugaz-one';    
+	import Cards from './components/Cards/Cards.svelte';
+
+    // example
+    // const tiger = {
+	// 	color: 'red',
+	// 	src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRilKZ67skjO2YgHuT6sEV0nVuKH36u-YNi7g&usqp=CAU',
+	// 	name: 'cooTiger',
+	// 	description: 'lone ranger, pioneering the Big Cat Family into a brand new echelon.'
+	// }
 </script>
 
 <!--
@@ -64,6 +73,8 @@
                             <p class="text-sm text-gray-500 dark:text-gray-400">$70.99</p>
                         </div>
                     </div>
+
+                    <Cards />
                 </div>
             </div>
         </section>
