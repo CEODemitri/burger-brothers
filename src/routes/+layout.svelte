@@ -12,19 +12,19 @@
         </figure>
         <span class="sr-only">Burger Brothers</span>
     </a>
-    <nav class="ml-auto flex gap-4 sm:gap-6">
-        <a class="text-sm font-medium hover:underline underline-offset-4" href="/Menu" rel="ugc">
+    <nav class="ml-auto flex gap-4 sm:gap-6 text-neutral-700">
+        <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105" href="/Menu" rel="ugc">
             Menu
         </a>
-        <a class="text-sm font-medium hover:underline underline-offset-4" href="/Locations" rel="ugc">
-            Visit Us
+        <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105" href="/Locations" rel="ugc">
+            Locations
         </a>
-        <a class="text-sm font-medium hover:underline underline-offset-4" href="#" rel="ugc">
-            History
+        <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105" href="#" rel="ugc">
+            About Us
         </a>
-        <a class="text-sm font-medium hover:underline underline-offset-4" href="#" rel="ugc">
+        <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105" href="#" rel="ugc">
             Contact
         </a>
     </nav>
 </header>
-  <slot />
+<slot />

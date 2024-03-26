@@ -1,6 +1,7 @@
 <script>
     // Supports weights 300-700
-    import '@fontsource-variable/comfortaa';    
+    import '@fontsource-variable/comfortaa';
+    import '@fontsource/fugaz-one';    
 </script>
 
 <!--
@@ -13,26 +14,26 @@
     </div>
     
     <main class="flex-1">
-        <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+        <section class="w-full py-12 md:py-18 lg:py-24">
             <div class="container flex flex-col items-center justify-center space-y-4 px-4 md:px-6">
                 <div class="space-y-2 text-center">
                     <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                         Burger Brothers
                     </h1>
-                    <p class="mx-auto max-w-[400px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 font">
-                        Premium ingredients all day. Gourmet flavors. The perfect burger. Made your way.
+                    <p class="mx-auto max-w-[100ch] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 font">
+                        Premium and fresh ingredients all day loaded into your favorite buns. Gourmet flavors dripping. The perfect burger. YOUR perfect burger, Made your way.
                     </p>
                 </div>
-                <img src="/placeholder.svg" width="600" height="400" alt="Hero" class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center">
+                <img src="/landing/heroBurger-grilled_chz.png" width="600" height="400" alt="Hero" class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center lg:w-[75%]">
                 <section>
-                    <button class="text-white bg-black p-2 rounded-md">Order Online</button>
-                    <button class="outline outline-black outline-1 p-2 rounded-md">Full Menu</button>
+                    <button class="text-white bg-black p-2 rounded-md special hover:scale-125 hover:mx-4">Order Online</button>
+                    <a href="/Menu" class="underline p-2 rounded-md special">Full Menu</a>
                 </section>
             </div>
         </section>
         <section class="w-full py-12 md:py-24 lg:py-32 border-t">
             <div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
-                <span class="pill bg-black text-white w-fit m-auto px-3 rounded-xl ">Specials</span>
+                <span class="pill bg-black text-white w-fit m-auto px-3 rounded-xl ">Burgertastic</span>
                 <div class="space-y-3">
                     <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                         Seasonal Menu
@@ -100,6 +101,10 @@
 </div>
 
 <style>
+    h1, h2, h3, .special {
+        font-family: 'Fugaz One', system-ui;
+    }
+
     p, button {
         font-family: 'Comfortaa Variable', sans-serif;
         font-size: 16px;

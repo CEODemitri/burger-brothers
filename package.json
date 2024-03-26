@@ -27,6 +27,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource-variable/comfortaa": "^5.0.19"
+		"@fontsource-variable/comfortaa": "^5.0.19",
+		"@fontsource/fugaz-one": "^5.0.18"
 	}
 }
