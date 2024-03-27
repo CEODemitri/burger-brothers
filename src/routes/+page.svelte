@@ -3,14 +3,14 @@
     import '@fontsource-variable/comfortaa';
     import '@fontsource/fugaz-one';    
 	import Cards from './components/Cards/Cards.svelte';
+    
+    const melt = {
+        src: '/specials/grill-quinoa.png',
+        price: 55.99,
+        name: 'Grilled Quinoa',
+        description: 'You smell me.'
+    }
 
-    // example
-    // const tiger = {
-	// 	color: 'red',
-	// 	src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRilKZ67skjO2YgHuT6sEV0nVuKH36u-YNi7g&usqp=CAU',
-	// 	name: 'cooTiger',
-	// 	description: 'lone ranger, pioneering the Big Cat Family into a brand new echelon.'
-	// }
 </script>
 
 <!--
@@ -74,7 +74,7 @@
                         </div>
                     </div>
 
-                    <Cards />
+                    <Cards {...melt}/>
                 </div>
             </div>
         </section>

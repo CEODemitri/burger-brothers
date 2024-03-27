@@ -1,5 +1,6 @@
 <script>
     import "../app.css";
+    
   </script>
   
   <header class="px-4 lg:px-6 h-14 flex items-center">
@@ -24,6 +25,11 @@
         </a>
         <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105" href="#" rel="ugc">
             Contact
+        </a>
+        <a href="#">
+            <span class="material-icons">
+                receipt_long
+            </span>
         </a>
     </nav>
 </header>
