@@ -6,9 +6,23 @@
     
     const melt = {
         src: '/specials/grill-quinoa.png',
-        price: 55.99,
+        price: 85.99,
         name: 'Grilled Quinoa',
         description: 'You smell me.'
+    }
+
+    const pork = {
+        src: '/specials/pork.png',
+        price: 45.99,
+        name: 'Pork Chop',
+        description: 'You see me.'
+    }
+
+    const breakfast = {
+        src: '/specials/bk.png',
+        price: 65.99,
+        name: 'Break Fast',
+        description: 'You feel me.'
     }
 
 </script>
@@ -40,41 +54,49 @@
                 </section>
             </div>
         </section>
+
+        <!-- review carousel -->
+        <section>
+            <div class="carousel carousel-end rounded-box">
+                <div class="carousel-item">
+                  <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Drink" />
+                </div> 
+                <div class="carousel-item">
+                  <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Drink" />
+                </div> 
+                <div class="carousel-item">
+                  <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Drink" />
+                </div> 
+                <div class="carousel-item">
+                  <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Drink" />
+                </div> 
+                <div class="carousel-item">
+                  <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Drink" />
+                </div> 
+                <div class="carousel-item">
+                  <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Drink" />
+                </div> 
+                <div class="carousel-item">
+                  <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Drink" />
+                </div>
+              </div>
+        </section>
+
         <section class="w-full py-12 md:py-24 lg:py-32 border-t">
             <div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
                 <span class="pill bg-black text-white w-fit m-auto px-3 rounded-xl ">Burgertastic</span>
                 <div class="space-y-3">
                     <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                        Seasonal Menu
+                        Popular Menu
                     </h2>
                     <p class="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                        Limited timing creations. We in parallel with nature; many of our beautiful creations are seasonal, not to be abused or imitated.
+                        Limited timing creations. We chef in parallel with nature; many of our beautiful creations are seasonal, not to be abused or imitated.
                     </p>
                 </div>
                 <div class="mx-auto grid max-w-5xl items-start gap-6 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-3">
-                    <div class="flex flex-col items-center space-y-2">
-                        <img src="/placeholder.svg" width="400" height="400" alt="Burger" class="aspect-square overflow-hidden rounded-xl object-cover object-center">
-                        <div class="space-y-2 text-center">
-                            <h3 class="text-xl font-bold">Classic Burger</h3>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">$50.99</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center space-y-2">
-                        <img src="/placeholder.svg" width="400" height="400" alt="Burger" class="aspect-square overflow-hidden rounded-xl object-cover object-center">
-                        <div class="space-y-2 text-center">
-                            <h3 class="text-xl font-bold">Cheeseburger</h3>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">$60.99</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center space-y-2">
-                        <img src="/placeholder.svg" width="400" height="400" alt="Burger" class="aspect-square overflow-hidden rounded-xl object-cover object-center">
-                        <div class="space-y-2 text-center">
-                            <h3 class="text-xl font-bold">Bacon Burger</h3>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">$70.99</p>
-                        </div>
-                    </div>
-
+                    <Cards {...breakfast}/>
                     <Cards {...melt}/>
+                    <Cards {...pork}/>
                 </div>
             </div>
         </section>

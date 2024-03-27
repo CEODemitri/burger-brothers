@@ -16,7 +16,7 @@
         <p class="w-72">{description}</p>
         
         <form action="" class="flex justify-center gap-7">
-            <input type="number" class="w-8 bg-black text-white rounded-xl">
+            <input type="number" class="w-8 bg-black text-white rounded-xl" min="0">
             <button class="bg-black text-white px-5 py-2 rounded-md">Add To Cart</button>
         </form>
     </div>
