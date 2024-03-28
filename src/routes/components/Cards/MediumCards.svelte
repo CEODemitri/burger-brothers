@@ -11,10 +11,11 @@
 <div class="flex flex-col space-y-2 p-2 text-left">
 	<img
 		{src}
-		width="400"
-		height="400"
-		alt="Burger"
-		class="aspect-square overflow-hidden rounded-xl object-cover object-center"
+		width="300"
+		height="200"
+		alt="Starter Item"
+		class="rounded-lg object-cover"
+		style="aspect-ratio: 400 / 300; object-fit: cover;"
 	/>
 	<div class="space-y-2">
 		<p class="text-sm text-gray-500 dark:text-gray-400">{price}</p>

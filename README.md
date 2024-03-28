@@ -17,7 +17,7 @@ Front End project using Sveltekit, Tailwind, v0.dev for base layout with chatGPT
 COMPLETE!
 
 ## TODO
-1. more material icons
-2. more daisy ui
-3. use the carousel for a creative idea. right now i have reviews there but i think i can go bigger.
+1. fix structure, some h2 skipped, clean styles
+2. more to the menu
+3. is the landing page complete?
 
