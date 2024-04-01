@@ -17,7 +17,13 @@ Front End project using Sveltekit, Tailwind, v0.dev for base layout with chatGPT
 COMPLETE!
 
 ## TODO
-1. fix structure, some h2 skipped, clean styles
-2. more to the menu
-3. is the landing page complete?
+1. fix structure, some h2 skipped
 
+---
+# UPDATE
+Make a clean Svelte Web Application
+1. Tools: 
+Svelte/Kit, v0.dev, Tailwind Daisy UI
+
+## TODO
+1. Base Content and Pages

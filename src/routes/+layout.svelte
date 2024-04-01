@@ -20,11 +20,11 @@
         <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold" href="/Locations" rel="ugc">
             Locations
         </a>
-        <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold" href="#" rel="ugc">
+        <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold" href="/About" rel="ugc">
             About Us
         </a>
-        <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold" href="#" rel="ugc">
-            Contact
+        <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold" href="/Events" rel="ugc">
+            Events
         </a>
         <a href="#">
             <span class="material-icons">
