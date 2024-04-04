@@ -66,10 +66,29 @@
         </div>
         <div class="p-6">
           <div class="container grid items-start gap-6 px-4 md:grid-cols-2 md:gap-10 lg:grid-cols-3">
-            <MediumCards />
-            <MediumCards />
-            <MediumCards />
-            <MediumCards />
+            <div class="carousel rounded-box w-96">
+              <div class="carousel-item w-1/2">
+                <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" class="w-full" />
+              </div> 
+              <div class="carousel-item w-1/2">
+                <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" class="w-full" />
+              </div> 
+              <div class="carousel-item w-1/2">
+                <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" class="w-full" />
+              </div> 
+              <div class="carousel-item w-1/2">
+                <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" class="w-full" />
+              </div> 
+              <div class="carousel-item w-1/2">
+                <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" class="w-full" />
+              </div> 
+              <div class="carousel-item w-1/2">
+                <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" class="w-full" />
+              </div> 
+              <div class="carousel-item w-1/2">
+                <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" class="w-full" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
