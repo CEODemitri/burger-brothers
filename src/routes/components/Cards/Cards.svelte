@@ -17,9 +17,9 @@
 		class="aspect-square overflow-hidden rounded-xl object-cover object-center"
 	/>
 	<div class="space-y-2">
-		<p class="text-sm text-gray-500 dark:text-gray-400">{price}</p>
+		<p class="text-sm text-gray-500">{price}</p>
 		<h3 class="text-xl font-bold">{name}</h3>
-		<p class="w-72">{description}</p>
+		<p class="w-72 text-gray-600">{description}</p>
 
 		<form action="" class="flex justify-center items-center gap-7">
 			<div class="grid gap-2">
@@ -79,6 +79,5 @@
 	p {
 		font-family: 'Comfortaa Variable', cursive;
 		font-size: 0.8em;
-		color: grey;
 	}
 </style>

@@ -38,7 +38,7 @@
 
 	<main class="flex-1">
 		<section class="w-full py-12 md:py-18 lg:py-24">
-			<div class="container flex flex-col items-center justify-center space-y-4 px-4 md:px-6">
+			<div class="container flex flex-col items-center justify-center space-y-4 px-4 md:px-6 m-auto">
 				<div class="space-y-2 text-center">
 					<h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
 						Burger Brothers
@@ -67,12 +67,12 @@
 		</section>
 
 		<!-- review carousel -->
-		<h2>Flavors for all Ranges</h2>
+		<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl my-5 mx-5">Flavors for all Ranges</h2>
 		<Carousel />
 
 		<!-- popular section -->
-		<section class="w-full py-12 md:py-24 lg:py-32 border-t">
-			<div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
+		<section class="w-full py-12 md:py-24 lg:py-32 border-t bg-neutral-200">
+			<div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6 m-auto">
 				<span class="pill bg-black text-white w-fit m-auto px-3 rounded-xl">Burgertastic</span>
 				<div class="space-y-3">
 					<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Popular Menu</h2>
@@ -95,11 +95,11 @@
 
 		<!-- Value Section -->
 		<!-- written with more wisdom; all styles here are preloaded. no editing has been done -->
-		<article class="border">
-			<h2>Your Bucks Matter</h2>
-			<p>Cut the foogazi and come experience a Real Burger.</p>
+		<article class="max-w-xl m-auto mt-16">
+			<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">Your Bucks Matter</h2>
+			<p class="mt-4">Cut the foogazi and come experience a Real Burger.</p>
 
-			<section>
+			<section class="flex flex-col gap-5 my-10">
                 <!-- copy and paste these generic cards and styles with no edit -->
 				<div class="card card-side bg-base-100 shadow-xl">
 					<figure>
@@ -112,7 +112,7 @@
 						<h2 class="card-title">Real Organic Ingredients</h2>
 						<p>Click the button to watch on Jetflix app.</p>
 						<div class="card-actions justify-end">
-							<button class="btn btn-primary">Watch</button>
+							<button class="btn btn-primary">Interactive Map</button>
 						</div>
 					</div>
 				</div>
@@ -122,7 +122,7 @@
 						<h2 class="card-title">Passionate Chefs and Staff</h2>
 						<p>Click the button to watch on Jetflix app.</p>
 						<div class="card-actions justify-end">
-							<button class="btn btn-primary">Watch</button>
+							<button class="btn btn-primary">See Staff</button>
 						</div>
 					</div>
                     <figure>
@@ -144,7 +144,7 @@
 						<h2 class="card-title">Golden Recipe</h2>
 						<p>Click the button to watch on Jetflix app.</p>
 						<div class="card-actions justify-end">
-							<button class="btn btn-primary">Watch</button>
+							<button class="btn btn-primary">Order Now</button>
 						</div>
 					</div>
 				</div>

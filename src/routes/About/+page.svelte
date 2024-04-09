@@ -1,8 +1,16 @@
-<h1>About Burger Brothers</h1>
+<script>
+    import { slide } from 'svelte/transition'
+    import { quintOut } from 'svelte/easing';
+</script>
+
+
+<h1 class="text-3xl font-semibold" transition:slide={{ delay: 250, duration: 300 }}>About Burger Brothers</h1>
 <p>Long Lasting, strong Will.</p>
 
 <article>
-    <h2>History</h2>
+    <section class="h-48 bg-red-500 glass">
+        Hard works pays off.
+    </section>
     <p>Burger Brothers was founded in 2014.</p>
 
     <!-- visit us -->

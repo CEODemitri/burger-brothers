@@ -27,3 +27,5 @@ Svelte/Kit, v0.dev, Tailwind Daisy UI
 
 ## TODO
 1. Base Content and Pages
+    a. Home - 95%
+        i. 10 imgs, 3 new links
