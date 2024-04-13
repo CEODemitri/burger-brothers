@@ -9,21 +9,21 @@
 		src: '/specials/grill-quinoa.png',
 		price: 85.99,
 		name: 'Grilled Quinoa',
-		description: 'You smell me.'
+		description: 'You smell me. Quinoa from the untapped valleys across this earth. Finest ingredients.'
 	};
 
 	const pork = {
 		src: '/specials/pork.png',
 		price: 45.99,
 		name: 'Pork Chop',
-		description: 'You see me.'
+		description: 'You see me. Chops raised on our farms. If you know good food, what are we talking about, order now.'
 	};
 
 	const breakfast = {
 		src: '/specials/bk.png',
 		price: 65.99,
 		name: 'Break Fast',
-		description: 'You feel me.'
+		description: 'You feel me. All natural eggs paired elegantly with fresh cut hashbrowns.'
 	};
 </script>
 
@@ -40,7 +40,8 @@
 		<section class="w-full py-12 md:py-18 lg:py-24">
 			<div class="container flex flex-col items-center justify-center space-y-4 px-4 md:px-6 m-auto">
 				<div class="space-y-2 text-center">
-					<h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+					<span class="pill bg-black text-white w-fit p-1 m-auto px-3 rounded-xl">Legendary</span>
+					<h1 class="text-[4rem] md:text-[5rem] lg:text-[6rem] font-bold tracking-tighter">
 						Burger Brothers
 					</h1>
 					<p
@@ -59,9 +60,9 @@
 				/>
 				<section>
 					<button class="text-white bg-black p-2 rounded-md special hover:scale-125 hover:mx-4"
-						>Order Online</button
+						><a href="/Menu" class="special">Order Online</a></button
 					>
-					<a href="/Menu" class="underline p-2 rounded-md special">Full Menu</a>
+					<a href="/Locations" class="underline p-2 rounded-md special">Find a Location</a>
 				</section>
 			</div>
 		</section>
@@ -95,7 +96,7 @@
 
 		<!-- Value Section -->
 		<!-- written with more wisdom; all styles here are preloaded. no editing has been done -->
-		<article class="max-w-xl m-auto mt-16">
+		<article class="max-w-xl md:max-w-2xl m-auto mt-16">
 			<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">Your Bucks Matter</h2>
 			<p class="mt-4">Cut the foogazi and come experience a Real Burger.</p>
 

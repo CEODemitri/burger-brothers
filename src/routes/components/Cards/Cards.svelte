@@ -18,7 +18,7 @@
 	/>
 	<div class="space-y-2">
 		<p class="text-sm text-gray-500">{price}</p>
-		<h3 class="text-xl font-bold">{name}</h3>
+		<h3 class="text-xl font-bold text-yellow-600">{name}</h3>
 		<p class="w-72 text-gray-600">{description}</p>
 
 		<form action="" class="flex justify-center items-center gap-7">
