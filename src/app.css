@@ -1,3 +1,240 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prosto+One&display=swap');
+
+/* --------------------------- */
+/* Custom Properties           */
+/* --------------------------- */
+
+:root {
+    /* colors */
+    --color-base: 22, 85%, 43%;
+    --color-medium: 41, 71%, 74%;
+    --color-dark: 250, 27%, 17%;
+    --color-accent: 68, 21%, 72%;
+    --color-light: 50, 39%, 82%;
+    
+    /* font-sizes */
+    /* !px break a11y! */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2.25rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+  
+    /* font-families */
+    --ff-serif: "Prost One", serif;
+    --ff-sans: "Lato", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+  }
+  
+  
+  /* ---------------- */
+  /* Reset            */
+  /* ---------------- */
+  
+  /* Box Sizing */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Reset Margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  picture {
+    margin: 0;
+  }
+  
+  h1, 
+  h2,
+  h3,
+  h4 {
+    font-weight: 400;
+  }
+  
+  /* Body Set */
+  body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    color: hsl(var(--color-light));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  
+  /* easier images */
+  img, picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* form elements */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* remove animations for people who turned them off */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  /* -------------------------- */
+  /* Utility Classes            */
+  /* -------------------------- */
+  
+  /* general */
+  
+  .flex {
+    display: flex;
+    /* use a custom property with a default value just in case */
+    gap: var(--gap, 1rem);
+  }
+  
+  .grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+  }
+  
+  /* .card :where(h1, h2, h3) {} */
+  
+  /* .flow > * + * */
+  .flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+    /* outline: 1px solid red; */
+  }
+  
+  .container {
+    /* logical property */
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  /* colors */
+  
+  .bg-dark {
+    background-color: hsl( var(--color-dark) );
+  }
+  .bg-base {
+    background-color: hsl( var(--color-base) );
+  }
+  .bg-light {
+    background-color: hsl( var(--color-light) );
+  }
+  
+  .text-dark {
+    color: hsl( var(--color-dark) );
+  }
+  .text-accent {
+    color: hsl( var(--color-accent) );
+  }
+  .text-light {
+    color: hsl( var(--color-light) );
+  }
+  
+  .example-comp {
+    background-color: hsl( var(--color-base));
+  }
+  
+  /* typography */
+  .ff-serif {
+    font-family: var(--ff-serif);
+  }
+  .ff-sans {
+    font-family: var(--ff-sans);
+  }
+  .ff-sans-normal {
+    font-family: var(--ff-sans-normal);
+  }
+  
+  .letter-spacing-1 {
+    letter-spacing: 4.75px;
+  }
+  .letter-spacing-2 {
+    letter-spacing: 2.7px;
+  }
+  .letter-spacing-3 {
+    letter-spacing: 2.35px;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .fs-900 {
+    font-size: var(--fs-900);
+  }
+  .fs-800 {
+    font-size: var(--fs-800);
+  }
+  .fs-700 {
+    font-size: var(--fs-700);
+  }
+  .fs-600 {
+    font-size: var(--fs-600);
+  }
+  .fs-500 {
+    font-size: var(--fs-500);
+  }
+  .fs-400 {
+    font-size: var(--fs-400);
+  }
+  .fs-300 {
+    font-size: var(--fs-300);
+  }
+  .fs-200 {
+    font-size: var(--fs-200);
+  }
+  
+  .fs-900,
+  .fs-800,
+  .fs-700,
+  .fs-600 {
+    line-height: 1.1;
+  }
+  
+  .numbered-title {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-500);
+    text-transform: uppercase;
+    letter-spacing: 4.72px;
+  }
+  
+  
+  /* save from using an extra class name */
+  .numbered-title span {
+    margin-right: .5em;
+    font-weight: 700;
+    color: hsl( var(--color-accent));
+  }

@@ -18,13 +18,13 @@
             Menu
         </a>
         <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold" href="/Locations" rel="ugc">
-            Locations
-        </a>
-        <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold" href="/About" rel="ugc">
-            About Us
+            About
         </a>
         <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold" href="/Events" rel="ugc">
-            Events
+            FAQ
+        </a>
+        <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold" href="/Shop" rel="ugc">
+            Shop
         </a>
         <a href="#">
             <span class="material-icons">
