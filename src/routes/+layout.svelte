@@ -1,6 +1,8 @@
 <script>
     import "../app.css";
-    
+    import '@fontsource-variable/comfortaa';
+	import '@fontsource/fugaz-one';
+    import '@fontsource/prosto-one';
   </script>
   
   <header class="px-4 lg:px-6 h-14 flex items-center">

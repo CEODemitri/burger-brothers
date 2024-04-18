@@ -1,7 +1,5 @@
 <script>
 	// Supports weights 300-700
-	import '@fontsource-variable/comfortaa';
-	import '@fontsource/fugaz-one';
 	import Cards from './components/Cards/Cards.svelte';
 	import Carousel from './components/Home/Carousel.svelte';
 

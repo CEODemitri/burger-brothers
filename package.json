@@ -30,6 +30,7 @@
 	"dependencies": {
 		"@fontsource-variable/comfortaa": "^5.0.19",
 		"@fontsource/fugaz-one": "^5.0.18",
+		"@fontsource/prosto-one": "^5.0.19",
 		"bootstrap-icons": "^1.11.3",
 		"uninstall": "^0.0.0"
 	}
