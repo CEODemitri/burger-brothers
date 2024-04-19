@@ -27,10 +27,10 @@ Front End project using Sveltekit, Tailwind, v0.dev for base layout with chatGPT
 
 # Burger Brothers
 
-Home / Menu . About . FAQ . Shop
+Home . Menu . About . FAQ . Shop
 
-home: nav, hero, sm abou, sm menu, reviews, footer
-menu: nav, season indicator, appetizers, starters, entrees, sides, drinks, dessert, old people footer
+home: nav, hero, sm menu, reviews, sm abou, footer
+menu: nav, season indicator, starters, entrees, sides, drinks, dessert, old people footer
 about: nav, history, locations, leaders, partners, in the works, footer
 faq: nav, search, top 10, leave a question, email, address, footer
 shop: diff vibe .. nav, popular, all products, categories
@@ -43,8 +43,12 @@ shop: diff vibe .. nav, popular, all products, categories
 ## TODO
 
 1. set foundations
+   home: finsihed...for now
    a. final review home page. clean up any content and copy. move on.
    b. design: component and icon sections complete.
+   ComPLETE FOR NOW> MUST EDIT REVIEW SECTION AND SM ABOU sections.
+
+   menu: 
 2. user authentication
 3. menu management: create a dynamic menu that can be updated with new items and descriptions
 4. ordering system: develop a system for placing and tracking orders including takeout and delivery options
