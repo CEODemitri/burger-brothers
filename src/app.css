@@ -164,6 +164,9 @@
   .text-dark {
     color: hsl( var(--color-dark) );
   }
+  .text-base {
+    color: hsl( var(--color-base) );
+  }
   .text-accent {
     color: hsl( var(--color-accent) );
   }

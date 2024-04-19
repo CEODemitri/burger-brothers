@@ -6,18 +6,18 @@
 		<h2 class="numbered-title"><span>01</span> colors</h2>
 
 		<div class="flex flex-wrap">
-            <div style="flex-grow: 1;">
+			<div style="flex-grow: 1;">
 				<div class="bg-base" style="padding: 3rem 1rem 1rem; border: 1px solid white;">#906A8C</div>
 
-				<p><span class="text-accent">RGB</span> 203, 85, 16 </p>
-				<p><span class="text-accent">HSL</span> 22˚, 85%, 43% </p>
+				<p><span class="text-accent">RGB</span> 203, 85, 16</p>
+				<p><span class="text-accent">HSL</span> 22˚, 85%, 43%</p>
 			</div>
 
 			<div style="flex-grow: 1;">
 				<div style="padding: 3rem 1rem 1rem; border: 1px solid white;">#242037</div>
 
-				<p><span class="text-accent">RGB</span> 36, 32, 55 </p>
-				<p><span class="text-accent">HSL</span> 250˚, 27%, 17% </p>
+				<p><span class="text-accent">RGB</span> 36, 32, 55</p>
+				<p><span class="text-accent">HSL</span> 250˚, 27%, 17%</p>
 			</div>
 
 			<div style="flex-grow: 1;">
@@ -25,8 +25,8 @@
 					#E3DDBF
 				</div>
 
-				<p><span class="text-accent">RGB</span> 209 204 208 </p>
-				<p><span class="text-accent">HSL</span> 227˚, 221, 191 </p>
+				<p><span class="text-accent">RGB</span> 209 204 208</p>
+				<p><span class="text-accent">HSL</span> 227˚, 221, 191</p>
 			</div>
 
 			<div style="flex-grow: 1;">
@@ -34,8 +34,8 @@
 					#ECCE8E
 				</div>
 
-				<p><span class="text-accent">RGB</span> 236, 206, 142 </p>
-				<p><span class="text-accent">HSL</span> 41˚, 71%, 74% </p>
+				<p><span class="text-accent">RGB</span> 236, 206, 142</p>
+				<p><span class="text-accent">HSL</span> 41˚, 71%, 74%</p>
 			</div>
 
 			<div style="flex-grow: 1;">
@@ -43,8 +43,8 @@
 					#C3C7A9
 				</div>
 
-				<p><span class="text-accent">RGB</span> 195, 199, 169 </p>
-				<p><span class="text-accent">HSL</span> 68˚, 21%, 72% </p>
+				<p><span class="text-accent">RGB</span> 195, 199, 169</p>
+				<p><span class="text-accent">HSL</span> 68˚, 21%, 72%</p>
 			</div>
 		</div>
 	</section>
@@ -53,7 +53,7 @@
 	<section id="typography" style="margin: 4rem 0;">
 		<h2 class="numbered-title"><span>02</span> typography</h2>
 
-		<div class="flex flex-wrap  md:flex-nowrap">
+		<div class="flex flex-wrap md:flex-nowrap">
 			<div class="flow" style="flex-basis: 100%; --flow-space: 4rem;">
 				<div>
 					<p class="text-accent">Heading 1 - Fugaz One - 150px</p>
@@ -67,7 +67,7 @@
 
 				<div>
 					<p class="text-accent">Heading 3 - Fugaz One - 56px</p>
-					<p class="fs-700 ff-serif uppercase">This day & The Next </p>
+					<p class="fs-700 ff-serif uppercase">This day & The Next</p>
 				</div>
 
 				<div>
@@ -128,14 +128,13 @@
 		</div>
 
 		<div class="flex flex-col">
-
 			<!-- explore button -->
 			<div style="margin-top: 5rem;">
 				<a href="#" class="large-button uppercase ff-serif fs-600 text-dark bg-light">Explore</a>
 			</div>
 
 			<!-- tabs -->
-			<div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem;">
+			<div class="flow" style="--flow-space: 4rem;">
 				<div class="tab-list underline-indicators flex">
 					<button
 						aria-selected="true"
@@ -174,10 +173,15 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- component library -->
+	<section>
+		<h2 class="numbered-title"><span>04</span>Component Library</h2>
+	</section>
 </div>
 
 <style>
-    section {
-        margin: 4rem 0;
-    }
+	section {
+		margin: 4rem 0;
+	}
 </style>
