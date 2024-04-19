@@ -62,9 +62,7 @@
 					class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center lg:w-[75%]"
 				/>
 				<section>
-					<button
-						class="text-light bg-base w-fit px-4 py-2 rounded-md special hover:scale-125 hover:mx-4"
-						><a href="/Menu" class="special fs-500">Order Online</a></button
+					<button class="large-button"><a href="/Menu" class="special fs-500">Order Online</a></button
 					>
 					<a href="/Locations" class="underline p-2">Find a Location</a>
 				</section>

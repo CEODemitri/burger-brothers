@@ -71,12 +71,12 @@
 				</div>
 
 				<div>
-					<p class="text-accent">Heading 4 - Merriweather Regular - 32px</p>
+					<p class="text-accent">Heading 4 - Fugaz One - 32px</p>
 					<p class="fs-600 ff-serif uppercase">Tasty and Delicious</p>
 				</div>
 
 				<div>
-					<p class="text-accent">Heading 5 - Barlow - 28px - 4.75 Character Space</p>
+					<p class="text-accent">Heading 5 - Prosto One - 28px - 4.75 Character Space</p>
 					<p class="text-accent fs-500 ff-sans-normal uppercase letter-spacing-1">
 						Eat Ours and never need another!
 					</p>
@@ -85,23 +85,20 @@
 			<div class="flow" style="flex-basis: 100%">
 				<div>
 					<p class="text-accent">Subheading 1 - Fugaz One - 28px</p>
-					<p class="fs-500 ff-serif uppercase">384, 400 km</p>
+					<p class="fs-500 ff-serif uppercase">Starters</p>
 				</div>
 				<div>
-					<p class="text-accent">Subheading 2 - Prosto One - 14px - 2.35 Character Space</p>
-					<p class="fs-200 ff-sans-normal letter-spacing-3">Avg. Distance</p>
+					<p class="text-accent">Subheading 2 - Comfortaa Variable - 14px - 2.35 Character Space</p>
+					<p class="fs-200 ff-sans letter-spacing-3">Vegan Option</p>
 				</div>
 				<div>
-					<p class="text-accent">Nav Text - Prosto One - 16px - 2.7 Character Space</p>
-					<p class="fs-300 ff-sans-normal letter-spacing-2">Europa</p>
+					<p class="text-accent">Nav Text - Comfortaa Variable - 16px - 2.7 Character Space</p>
+					<p class="fs-300 ff-sans letter-spacing-2">About Us</p>
 				</div>
 				<div>
-					<p class="text-accent">Body Text - Barlow - 16px - 1.5 Character Space</p>
+					<p class="text-accent">Body Text - Prosto One - 16px - 1.5 Character Space</p>
 					<p>
-						Europa is the second largest and most massive of the four inner planets of the Solar
-						System, and the largest in terms of volume and mass. It is a gas giant with an
-						atmosphere of nitrogen, oxygen, and other hydrocarbons, with a surface pressure of about
-						92 times that of Earth, and a temperature of -148.8 °C.
+						Started one two way back. Best combos here and there, come and try us. This is pure filler text so use your imaination. Sides and drinks. The more the merrier, dare us if you may. The world is yours.
 					</p>
 				</div>
 			</div>
@@ -115,7 +112,7 @@
 		<!-- navigation -->
 		<div>
 			<nav>
-				<ul class="primary-navigation flex underline-indicators" style="--gap: 4rem;">
+				<ul class="primary-navigation flex underline-indicators ff-sans" style="--gap: 4rem;">
 					<li class="active">
 						<a class="uppercase text-light letter-spacing-2" href="#"><span>01</span>Active</a>
 					</li>
@@ -130,7 +127,7 @@
 		<div class="flex flex-col">
 			<!-- explore button -->
 			<div style="margin-top: 5rem;">
-				<a href="#" class="large-button uppercase ff-serif fs-600 text-dark bg-light">Explore</a>
+				<a href="#" class="large-button uppercase text-dark bg-light">Explore</a>
 			</div>
 
 			<!-- tabs -->

@@ -306,3 +306,13 @@
   .dot-indicators > [aria-selected="true"] {
     background-color: hsla(var(--color-light), 1);
   }
+
+  .large-button {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    letter-spacing: 4.72px;
+    padding: 1em 2em;
+    border: 1px solid hsl(var(--color-light));
+    border-radius: 5px;
+    cursor: pointer;
+  }
