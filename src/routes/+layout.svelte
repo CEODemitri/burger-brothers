@@ -25,7 +25,7 @@
 		</a>
 		<a
 			class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold"
-			href="/Locations"
+			href="/About"
 			rel="ugc"
 		>
 			About

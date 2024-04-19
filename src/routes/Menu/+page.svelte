@@ -129,14 +129,14 @@
 	</div>
 
 	<!-- entrees -->
-	<div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
-		<div class="p-6 flex flex-row space-y-0 items-start gap-2">
+	<div class="rounded-lg border bg-card text-card-foreground shadow-sm flex justify-center" data-v0-t="card">
+		<div class="p-6 flex flex-row space-y-0 items-center gap-2">
 			<div class="grid gap-1">
 				<h3 class="text-5xl font-semibold whitespace-nowrap leading-none tracking-tight">Entrees</h3>
-				<p class="text-sm text-muted-foreground">Wash it down with a classic lift.</p>
+				<p class="text-sm text-muted-foreground">Take a peek. Do not bite the screen, only images.</p>
 			</div>
 		</div>
-		<div class="w-64 carousel rounded-box">
+		<div class="w-96 carousel rounded-box">
 			<div class="carousel-item w-full">
 			  <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
 			</div> 
@@ -158,11 +158,11 @@
 			<div class="carousel-item w-full">
 			  <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
 			</div>
-		  </div>
+		</div>
 	</div>
 
 	<!-- drinks -->
-	<div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+	<div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-white" data-v0-t="card">
 		<div class="p-6 flex flex-row space-y-0 items-start gap-2">
 			<div class="grid gap-1">
 				<h3 class="text-5xl font-semibold whitespace-nowrap leading-none tracking-tight">Drinks</h3>
@@ -245,6 +245,71 @@
 				<MediumCards />
 				<MediumCards />
 				<MediumCards />
+			</div>
+		</div>
+	</div>
+
+	<!-- old people -->
+	<div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-white" data-v0-t="card">
+		<div class="p-6 flex flex-row space-y-0 items-start gap-2">
+			<div class="grid gap-1">
+				<h3 class="text-5xl font-semibold whitespace-nowrap leading-none tracking-tight">Old People Section</h3>
+				<p class="text-sm text-muted-foreground">Wash it down with a classic lift.</p>
+			</div>
+		</div>
+		<div class="p-6">
+			<div class="container grid items-start gap-6 px-4 md:grid-cols-2 md:gap-10 lg:grid-cols-3">
+				<div class="carousel rounded-box w-96">
+					<div class="carousel-item w-1/2">
+						<img
+							src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
+							class="w-full"
+              alt="coming soon"
+						/>
+					</div>
+					<div class="carousel-item w-1/2">
+						<img
+							src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
+							class="w-full"
+              alt="coming soon"
+						/>
+					</div>
+					<div class="carousel-item w-1/2">
+						<img
+							src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
+							class="w-full"
+              alt="coming soon"
+						/>
+					</div>
+					<div class="carousel-item w-1/2">
+						<img
+							src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
+							class="w-full"
+              alt=""
+						/>
+					</div>
+					<div class="carousel-item w-1/2">
+						<img
+							src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
+							class="w-full"
+              alt="coming soon"
+						/>
+					</div>
+					<div class="carousel-item w-1/2">
+						<img
+							src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
+							class="w-full"
+              alt="coming soon"
+						/>
+					</div>
+					<div class="carousel-item w-1/2">
+						<img
+							src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
+							class="w-full"
+              alt="coming soon"
+						/>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

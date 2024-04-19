@@ -3,6 +3,7 @@
   import '@fontsource/fugaz-one';   
 </script>
 
+<!-- history, locations, leaders, partners, in the works, -->
 <div class="container px-4">
 	<div class="flex flex-col items-center gap-4 text-center">
 		<img
