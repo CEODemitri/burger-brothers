@@ -13,6 +13,8 @@
     --color-dark: 250, 27%, 17%;
     --color-accent: 68, 21%, 72%;
     --color-light: 50, 39%, 82%;
+
+    color: #C3C7A9;
     
     /* font-sizes */
     /* !px break a11y! */
@@ -22,7 +24,7 @@
     --fs-600: 2.25rem;
     --fs-500: 1.75rem;
     --fs-400: 1.125rem;
-    --fs-300: 1rem
+    --fs-300: 1rem;
     --fs-200: 0.875rem;
   
     /* font-families */
@@ -150,6 +152,14 @@
   .bg-light {
     background-color: hsl( var(--color-light) );
   }
+
+  .bg-medium {
+    background-color: hsl( var(--color-medium) );
+  }
+
+  .bg-accent {
+    background-color: hsl( var(--color-accent) );
+  }
   
   .text-dark {
     color: hsl( var(--color-dark) );
@@ -235,4 +245,61 @@
     margin-right: .5em;
     font-weight: 700;
     color: hsl( var(--color-accent));
+  }
+
+  /* -------------------------- */
+  /* Components */
+  /* -------------------------- */
+  
+  .primary-navigation {
+    --gap: 8rem;
+    --underline-gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .primary-navigation a {
+    text-decoration: none;
+  }
+  
+  .primary-navigation a > span {
+    font-weight: 700;
+    margin-right: .5em;
+  }
+  
+  .underline-indicators > * {
+    cursor: pointer;
+    padding: var(--underline-gap, 1rem) 0;
+    border: 0;
+    border-bottom: .2rem solid transparent;
+  }
+  
+  .underline-indicators > *:hover,
+  .underline-indicators > *:focus {
+    border-color: hsla(var(--color-light), 0.5);
+  }
+  
+  .underline-indicators > .active,
+  .underline-indicators > [aria-selected="true"] { 
+    color: hsl(var(--color-light));
+    border-color: hsl(var(--color-light));
+  }
+
+  .dot-indicators > * {
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: .5em;
+    background-color: hsla(var(--color-light), 0.5)
+  }
+  
+  .dot-indicators > *:hover,
+  .dot-indicators > *:focus {
+    background-color: hsla(var(--color-light, 1))
+  }
+  
+  .dot-indicators > [aria-selected="true"] {
+    background-color: hsla(var(--color-light), 1);
   }

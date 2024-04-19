@@ -5,17 +5,17 @@
     import '@fontsource/prosto-one';
   </script>
   
-  <header class="px-4 lg:px-6 h-14 flex items-center">
+  <header class="px-4 lg:px-6 h-14 flex items-center bg-dark text-light">
     <a class="flex items-center justify-center" href="/" rel="ugc">
         <figure>
             <img src="../logo.png" alt="" class="w-14">
             <figcaption>
-                <h1 class="text-2xl font-bold text-gray-900 sr-only">UGC</h1>
+                <h1 class="text-2xl font-bold text-gray-900 sr-only">Burger Brothers Logo</h1>
             </figcaption>
         </figure>
         <span class="sr-only">Burger Brothers</span>
     </a>
-    <nav class="ml-auto flex gap-4 sm:gap-6 text-neutral-700">
+    <nav class="ml-auto flex gap-4 sm:gap-6 text-light">
         <a class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold" href="/Menu" rel="ugc">
             Menu
         </a>
@@ -37,7 +37,7 @@
 </header>
 <slot />
 
-<footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-black text-white">
+<footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-dark text-white">
     <div class="flex items-center gap-2">
         <a class="flex items-center gap-2 text-sm hover:underline underline-offset-4" href="#" rel="ugc">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
