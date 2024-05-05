@@ -27,119 +27,90 @@
 	};
 </script>
 
-<!--
-// v0 by Vercel.
-// https://v0.dev/t/NTp0OzPUCg9
--->
-<div class="flex flex-col min-h-[100dvh] bg-light">
-	<div class="banner h-10 bg-base text-center text-dark py-2">
-		<p>Homepage Banner: Important Text Here</p>
+<div class="home">
+	<div class="hero-section">
+		<div class="overlay"></div>
+
+		<article class="hero-text ml-10 pt-10">
+			<h1 class="text-white text-7xl lg:text-[96px]">Burger Brothers</h1>
+			<p class="lg:w-[966px] text-md p-1 mt-5">
+				Lorem ipsum dolor sit amet consectetur. Placerat sed integer fusce venenatis. Lacinia
+				pretium magna maecenas quis. Egestas tortor quam cursus tellus.
+			</p>
+		</article>
 	</div>
 
-	<main class="flex-1 text-dark">
-		<!-- hero -->
-		<section class="w-full py-12 md:py-18 lg:py-24">
-			<div
-				class="container flex flex-col items-center justify-center space-y-4 px-4 md:px-6 m-auto"
-			>
-				<div class="space-y-2 text-center">
-					<span class="pill bg-dark text-light w-fit p-1 m-auto px-3 rounded-xl">Legendary</span>
-					<h1 class="text-[4rem] md:text-[5rem] lg:text-[6rem] font-bold ff-serif uppercase">
-						Burger Brothers
-					</h1>
-					<p
-						class="mx-auto max-w-[100ch] text-dark md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font"
-					>
-						Premium and fresh ingredients all day loaded into your favorite buns. Gourmet flavors
-						dripping. The perfect burger. YOUR perfect burger, Made your way.
-					</p>
-				</div>
-				<img
-					src="/landing/heroBurger-grilled_chz.png"
-					width="600"
-					height="400"
-					alt="Hero"
-					class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center lg:w-[75%]"
-				/>
-				<section>
-					<button class="large-button uppercase text-dark bg-base"><a href="/Menu" class="special fs-500">Order Online</a></button
-					>
-					<a href="/Locations" class="underline p-2">Find a Location</a>
-				</section>
-			</div>
+	<div class="menu hidden sm:block">
+		<section class="triangle"></section>
+		<section class="box max-w-screen-md">
+			<span class="links text-xl">Catering</span>
+			<span class="links text-xl">Order Online</span>
+			<span class="links text-xl">Find Location</span>
 		</section>
+	</div>
 
-		<!-- popular section -->
-		<section class="w-full py-12 md:py-24 lg:py-32 border-t bg-neutral-200">
-			<div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6 m-auto">
-				<span class="pill bg-dark text-accent w-fit m-auto px-3 rounded-xl">Burgertastic</span>
-				<div class="space-y-3">
-					<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Popular Menu</h2>
-					<p
-						class="mx-auto max-w-[600px] text-dark md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-light"
-					>
-						Limited timing creations. We chef in parallel with nature; many of our beautiful
-						creations are seasonal, not to be abused or imitated.
-					</p>
-				</div>
-				<div
-					class="mx-auto grid max-w-5xl items-start gap-6 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-3"
-				>
-					<Cards {...breakfast} />
-					<Cards {...melt} />
-					<Cards {...pork} />
-				</div>
-			</div>
-		</section>
-
-		<!-- review carousel -->
-		<section class="w-full py-12 md:py-24 lg:py-32">
-			<div class="px-4 text-center md:px-6">
-				<div>
-					<span class="pill bg-dark text-accent w-fit m-auto px-3 rounded-xl">Burgertastic</span>
-					<h2
-						class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl my-5 mx-5 text-center"
-					>
-						Flavors for all Ranges
-					</h2>
-					<Carousel />
-				</div>
-			</div>
-		</section>
-
-		<!-- small about -->
-		<section class="w-full py-12 md:py-24 lg:py-32 bg-neutral-200">
-			<div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6 m-auto">
-				<span class="pill bg-dark text-accent w-fit m-auto px-3 rounded-xl uppercase"
-					>Family first</span
-				>
-				<div class="space-y-3">
-					<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-						<a href="/FAQ">Who Are We?</a>
-					</h2>
-					<p
-						class="mx-auto max-w-[600px] text-dark md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-light"
-					>
-						Limited timing creations. We chef in parallel with nature; many of our beautiful
-						creations are seasonal, not to be abused or imitated.
-					</p>
-				</div>
-			</div>
-		</section>
-	</main>
+	<Cards {...melt} />
 </div>
 
 <style>
+	.home {
+		margin: auto;
+		max-width: 1440px;
+		height: 3080px;
+		background: linear-gradient(180deg, #fff, #e2ddc2);
+	}
+
+	.hero-section {
+		max-width: 1440px;
+		height: 600px;
+		background: url('../landing/heroImg.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		margin: auto;
+	}
+
+	.hero-text {
+		text-shadow: 5px 10px 10px black;
+	}
+
+	.overlay {
+		background-color: rgba(0, 0, 0, 0.6);
+		height: 100%;
+		position: absolute;
+	}
+
+	.triangle {
+		width: 0;
+		height: 0;
+		border-left: 40px solid transparent;
+		border-right: 40px solid transparent;
+		border-bottom: 60px solid #232135;
+		position: relative;
+		top: -150px;
+		margin: auto;
+	}
+
+	.box {
+		width: 60vw;
+		height: 20vh;
+		background-color: #232135;
+		position: relative;
+		top: -150px;
+		margin: auto;
+		border-radius: 30px 0 30px 0;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		text-align: center;
+	}
+
 	h1,
-	h2,
-	.special {
+	h2 {
 		font-family: 'Fugaz One', system-ui;
 	}
 
-	p,
-	button {
+	p {
 		font-family: 'Comfortaa Variable', sans-serif;
-		font-size: 16px;
 		line-height: 24px;
 	}
 </style>

@@ -1,30 +1,3 @@
-# Introducing : Burger Brothers.
-
-Front End project using Sveltekit, Tailwind, v0.dev for base layout with chatGPT for base content, and GSAP
-
-1. My Role: Lead Designer/Architect/Developer
-2. My Goals:
-   a. Create a fully feature project that shows my skills for building something beautiful.
-   b. Give Burger Brothers an Exceptional site that increases traffic and conversions
-
-## NEXT
-
-## TODO for Sesonal Section on Landing Page:
-
-1. Make Cards for Popular Burgers on Landing Page,
-   a. Image
-   b. Price
-   c. Description
-   d. cool way to display the season
-2. Create Three Popular Burgers.
-   COMPLETE!
-
-## TODO
-
-1. fix structure, some h2 skipped
-
----
-
 # Burger Brothers
 
 Home . Menu . About . FAQ . Shop
@@ -38,21 +11,15 @@ shop: diff vibe .. nav, popular, all products, categories
 <i>Make a clean Svelte Web Application</i>
 
 1. Tools:
-   Svelte/Kit, v0.dev, Tailwind, Daisy UI
+   Svelte/Kit, v0.dev, Tailwind, Daisy UI, Bootstrap Icons
 
 ## TODO
 
-1. set foundations
-   home: finsihed...for now
-   a. final review home page. clean up any content and copy. move on.
-   b. design: component and icon sections complete.
-   ComPLETE FOR NOW> MUST EDIT REVIEW SECTION AND SM ABOU sections.
-
-   menu: 
-2. user authentication
-3. menu management: create a dynamic menu that can be updated with new items and descriptions
-4. ordering system: develop a system for placing and tracking orders including takeout and delivery options
-5. payment intergration: portal for silliness
-6. responsive design
-7. backend intergration
-8. allow users to leave feedback on orders
+- [ ] set foundations
+- [ ] user authentication
+- [ ] menu management: create a dynamic menu that can be updated with new items and descriptions
+- [ ] ordering system: develop a system for placing and tracking orders including takeout and delivery options
+- [ ] payment intergration: portal for silliness
+- [ ] responsive design
+- [ ] backend intergration
+- [ ] allow users to leave feedback on orders
