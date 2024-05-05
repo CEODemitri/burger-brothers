@@ -11,7 +11,7 @@ shop: diff vibe .. nav, popular, all products, categories
 <i>Make a clean Svelte Web Application</i>
 
 1. Tools:
-   Svelte/Kit, v0.dev, Tailwind, Daisy UI
+   Svelte/Kit, v0.dev, Tailwind, Daisy UI, Bootstrap Icons
 
 ## TODO
 

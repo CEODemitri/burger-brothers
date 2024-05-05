@@ -7,6 +7,19 @@
 
 <header class="flex justify-between items-center px-5 m-auto">
 	<nav class="flex gap-4 sm:gap-6 text-dark">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="20"
+			height="22"
+			fill="orange"
+			class="bi bi-list"
+			viewBox="0 0 16 16"
+		>
+			<path
+				fill-rule="evenodd"
+				d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+			/>
+		</svg>
 		<a
 			class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold"
 			href="/Menu"
@@ -82,7 +95,7 @@
 <slot />
 
 <footer
-	class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-dark text-white"
+	class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-dark text-white m-auto"
 >
 	<div class="flex items-center gap-2">
 		<a
@@ -163,9 +176,14 @@
 	* {
 		max-width: 1440px;
 	}
+
 	a {
 		font-family: 'Comfortaa Variable', sans-serif;
 		font-size: 13px;
 		line-height: 24px;
+	}
+
+	button {
+		border-radius: 10px 0 10px 0;
 	}
 </style>

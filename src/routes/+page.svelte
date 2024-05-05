@@ -31,9 +31,9 @@
 	<div class="hero-section">
 		<div class="overlay"></div>
 
-		<article class="hero-text ml-5">
-			<h1 class="text-white text-7xl lg:text-[96px] pt-10">Burger Brothers</h1>
-			<p class="lg:w-[966px] text-sm p-1 mt-5">
+		<article class="hero-text ml-10 pt-10">
+			<h1 class="text-white text-7xl lg:text-[96px]">Burger Brothers</h1>
+			<p class="lg:w-[966px] text-md p-1 mt-5">
 				Lorem ipsum dolor sit amet consectetur. Placerat sed integer fusce venenatis. Lacinia
 				pretium magna maecenas quis. Egestas tortor quam cursus tellus.
 			</p>
@@ -42,24 +42,34 @@
 
 	<div class="menu hidden sm:block">
 		<section class="triangle"></section>
-		<section class="box"></section>
+		<section class="box max-w-screen-md flex justify-center">
+			<span class="links">Catering</span>
+			<span class="links">Order Online</span>
+			<span class="links">Find Location</span>
+		</section>
 	</div>
 </div>
 
 <style>
 	.home {
+		margin: auto;
+		max-width: 1440px;
 		height: 3080px;
 		background: linear-gradient(180deg, #fff, #e2ddc2);
 	}
 
 	.hero-section {
-		width: auto;
+		max-width: 1440px;
 		height: 600px;
 		background: url('../landing/heroImg.png');
 		background-position: center;
 		background-repeat: no-repeat;
 		position: relative;
 		margin: auto;
+	}
+
+	.hero-text {
+		text-shadow: 5px 10px 10px black;
 	}
 
 	.overlay {
@@ -94,8 +104,7 @@
 		font-family: 'Fugaz One', system-ui;
 	}
 
-	p,
-	button {
+	p {
 		font-family: 'Comfortaa Variable', sans-serif;
 		line-height: 24px;
 	}
