@@ -16,8 +16,8 @@
 		alt="Burger"
 		class="aspect-square overflow-hidden rounded-xl object-cover object-center"
 	/>
+	<p class="text-sm text-gray-500">{price}</p>
 	<div class="space-y-2">
-		<p class="text-sm text-gray-500">{price}</p>
 		<h3 class="text-xl font-bold text-">{name}</h3>
 		<p class="w-72 text-gray-600">{description}</p>
 

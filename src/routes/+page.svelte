@@ -42,12 +42,14 @@
 
 	<div class="menu hidden sm:block">
 		<section class="triangle"></section>
-		<section class="box max-w-screen-md flex justify-center">
-			<span class="links">Catering</span>
-			<span class="links">Order Online</span>
-			<span class="links">Find Location</span>
+		<section class="box max-w-screen-md">
+			<span class="links text-xl">Catering</span>
+			<span class="links text-xl">Order Online</span>
+			<span class="links text-xl">Find Location</span>
 		</section>
 	</div>
+
+	<Cards {...melt} />
 </div>
 
 <style>
@@ -97,6 +99,9 @@
 		top: -150px;
 		margin: auto;
 		border-radius: 30px 0 30px 0;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		text-align: center;
 	}
 
 	h1,

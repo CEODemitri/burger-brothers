@@ -9,8 +9,8 @@
 	<nav class="flex gap-4 sm:gap-6 text-dark">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="20"
-			height="22"
+			width="25"
+			height="23"
 			fill="orange"
 			class="bi bi-list"
 			viewBox="0 0 16 16"
