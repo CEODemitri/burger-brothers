@@ -48,7 +48,7 @@
 		</article>
 	</div>
 
-	<div class="menu hidden sm:block">
+	<div class="menu hidden sm:block h-fit">
 		<section class="triangle"></section>
 		<section class="box max-w-screen-md">
 			<span class="links text-xl">Catering</span>
@@ -127,6 +127,15 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		text-align: center;
+	}
+
+	.pill {
+		background-color: hsl(250, 27%, 17%);
+		color: #fff;
+		width: fit-content;
+		padding: 5px;
+		border-radius: 15px;
+		margin: auto;
 	}
 
 	h1,
