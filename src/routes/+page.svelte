@@ -25,6 +25,14 @@
 		name: 'Break Fast',
 		description: 'You feel me. All natural eggs paired elegantly with fresh cut hashbrowns, twice.'
 	};
+
+	// popular menu
+	const tabs = [
+		{ name: 'Starters', path: '#starters' },
+		{ name: 'Entrees', path: '#entrees' },
+		{ name: 'Drinks', path: '#drinks' },
+		{ name: 'Desserts', path: '#desserts' }
+	];
 </script>
 
 <div class="home">
@@ -47,6 +55,23 @@
 			<span class="links text-xl">Order Online</span>
 			<span class="links text-xl">Find Location</span>
 		</section>
+	</div>
+
+	<!-- popular menu -->
+	<div class="text-dark">
+		<div class="pill">Burgertastic</div>
+		<article>
+			<h2 class="text-3xl ff-sans text-center">Popular Menu</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur. Dui feugiat nunc id feugiat bibendum aliquet.
+				Bibendum tortor semper metus ligula egestas et ligula pulvinar.
+			</p>
+		</article>
+		<article class="flex justify-center ff-sans">
+			{#each tabs as tab}
+				<a href={tab.path}>{tab.name}</a>
+			{/each}
+		</article>
 	</div>
 
 	<Cards {...melt} />
