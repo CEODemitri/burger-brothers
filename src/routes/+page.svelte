@@ -1,7 +1,7 @@
 <script>
 	// Supports weights 300-700
-	import Cards from './components/Cards/Cards.svelte';
-	import Carousel from './components/Home/Carousel.svelte';
+	import Cards from '../components/Cards/Cards.svelte';
+	import SectionHeader from '../components/SectionHeader.svelte';
 
 	const melt = {
 		src: '/specials/grill-quinoa.png',
@@ -33,6 +33,12 @@
 		{ name: 'Drinks', path: '#drinks' },
 		{ name: 'Desserts', path: '#desserts' }
 	];
+
+	const popular = {
+		pill: 'Burgertastic',
+		title: 'Popular Menu',
+		description: 'Lorem ipsum dolor sit am, consect et ning ut Lorem ipsum dolor sit am.'
+	}
 </script>
 
 <div class="home">
@@ -58,15 +64,8 @@
 	</div>
 
 	<!-- popular menu -->
+	<SectionHeader {...popular}/>
 	<div class="text-dark">
-		<div class="pill">Burgertastic</div>
-		<article>
-			<h2 class="text-3xl ff-sans text-center">Popular Menu</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur. Dui feugiat nunc id feugiat bibendum aliquet.
-				Bibendum tortor semper metus ligula egestas et ligula pulvinar.
-			</p>
-		</article>
 		<article class="flex justify-center ff-sans">
 			{#each tabs as tab}
 				<a href={tab.path}>{tab.name}</a>
@@ -127,15 +126,6 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		text-align: center;
-	}
-
-	.pill {
-		background-color: hsl(250, 27%, 17%);
-		color: #fff;
-		width: fit-content;
-		padding: 5px;
-		border-radius: 15px;
-		margin: auto;
 	}
 
 	h1,
