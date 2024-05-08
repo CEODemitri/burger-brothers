@@ -37,7 +37,7 @@
 	const popular = {
 		pill: 'Burgertastic',
 		title: 'Popular Menu',
-		description: 'Lorem ipsum dolor sit am, consect et ning ut Lorem ipsum dolor sit am.'
+		description: 'Lorem ipsum dolor sit am, consect et ning ut Lorem ipsum dolor sit am. Ere metus in ning versert but auctor limere vel'
 	}
 </script>
 
@@ -54,26 +54,31 @@
 		</article>
 	</div>
 
+	<!-- call to action space -->
 	<div class="menu hidden sm:block h-fit">
 		<section class="triangle"></section>
-		<section class="box max-w-screen-md">
-			<span class="links text-xl">Catering</span>
-			<span class="links text-xl">Order Online</span>
-			<span class="links text-xl">Find Location</span>
+		<section class="box max-w-screen-md fs-300 flex items-center">
+			<span class="links">Catering</span>
+			<span class="links">Order Online</span>
+			<span class="links">Find Location</span>
 		</section>
 	</div>
 
 	<!-- popular menu -->
 	<SectionHeader {...popular}/>
 	<div class="text-dark">
-		<article class="flex justify-center ff-sans">
+		<article class="flex justify-center ff-sans m-5 fs-400">
 			{#each tabs as tab}
 				<a href={tab.path}>{tab.name}</a>
 			{/each}
 		</article>
 	</div>
 
-	<Cards {...melt} />
+	<article class="p-5 flex flex-wrap justify-center">
+		<Cards {...melt} />
+		<Cards {...pork} />
+		<Cards {...breakfast} />
+	</article>
 </div>
 
 <style>
@@ -104,6 +109,10 @@
 		position: absolute;
 	}
 
+	.menu {
+		margin-bottom: -90px;
+	}
+
 	.triangle {
 		width: 0;
 		height: 0;
@@ -126,15 +135,5 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		text-align: center;
-	}
-
-	h1,
-	h2 {
-		font-family: 'Fugaz One', system-ui;
-	}
-
-	p {
-		font-family: 'Comfortaa Variable', sans-serif;
-		line-height: 24px;
 	}
 </style>

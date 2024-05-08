@@ -13,8 +13,6 @@
     --color-dark: 250, 27%, 17%;
     --color-accent: 68, 21%, 72%;
     --color-light: 50, 39%, 82%;
-
-    color: #C3C7A9;
     
     /* font-sizes */
     /* !px break a11y! */
@@ -23,7 +21,7 @@
     --fs-700: 3.5rem;
     --fs-600: 2.25rem;
     --fs-500: 1.75rem;
-    --fs-400: 1.125rem;
+    --fs-400: 1.3rem;
     --fs-300: 1rem;
     --fs-200: 0.875rem;
   
