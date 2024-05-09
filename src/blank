@@ -1,0 +1,66 @@
+<script>
+  // starter items
+  const melt = {
+    src: '/specials/grill-quinoa.png',
+    price: 85.99,
+    name: 'Grilled Quinoa',
+    description:
+      'You smell me. Quinoa from the untapped valleys across this earth. Finest ingredients.'
+  };
+
+   // starter items
+  const pork = {
+    src: '/specials/pork.png',
+    price: 45.99,
+    name: 'Pork Chop',
+    description:
+      'You see me. Chops raised on our farms. If you know good food, what are we talking about, order now.'
+  };
+
+   // starter items
+  const breakfast = {
+    src: '/specials/bk.png',
+    price: 65.99,
+    name: 'Break Fast',
+    description: 'You feel me. All natural eggs paired elegantly with fresh cut hashbrowns, twice.'
+  };
+
+  // add 5 entree items 
+  // add 4 dessert items
+  // add 5 drink items  
+
+  // popular menu
+  const tabs = [
+    { name: 'Starters', path: '#starters', content: melt },
+    { name: 'Entrees', path: '#entrees', content: pork },
+    { name: 'Drinks', path: '#drinks', content: breakfast },
+    { name: 'Desserts', path: '#desserts', content: desserts }
+  ];
+
+  const popular = {
+    pill: 'Burgertastic',
+    title: 'Popular Menu',
+    description:
+      'Lorem ipsum dolor sit am, consect et ning ut Lorem ipsum dolor sit am. Ere metus in ning versert but auctor limere vel'
+  };
+
+  let selectedTab = tabs[0]; // default to the first tab
+
+  function selectTab(tab) {
+    selectedTab = tab;
+  }
+</script>
+
+<!-- popular menu -->
+<SectionHeader {...popular} />
+<div class="text-dark">
+  <article class="flex justify-center ff-sans m-5 fs-400">
+    {#each tabs as tab}
+      <a href={tab.path} on:click|preventDefault={() => selectTab(tab)}>{tab.name}</a>
+    {/each}
+  </article>
+</div>
+
+<article class="p-5 flex flex-wrap justify-center">
+  <Cards {...selectedTab.content} />
+</article>
