@@ -1,0 +1,18 @@
+<div class="flex flex-col w-fit justify-center items-center text-dark">
+	<div class="bg-dark w-fit rounded-full p-4">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="90"
+			height="90"
+			fill="currentColor"
+			class="bi bi-person-fill text-white"
+			viewBox="0 0 16 16"
+		>
+			<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+		</svg>
+	</div>
+	<h2 class="fs-300 ff-serif text-center">Person Name</h2>
+	<p class="w-[30ch] text-xs">
+		Lorem ipsum dolor sit amet consectetur. Id risus bibendum quis mauris sem ut proin.
+	</p>
+</div>

@@ -21,21 +21,21 @@
 			/>
 		</svg>
 		<a
-			class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold"
+			class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
 			href="/Menu"
 			rel="ugc"
 		>
 			Menu
 		</a>
 		<a
-			class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold"
+			class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
 			href="/About"
 			rel="ugc"
 		>
 			About
 		</a>
 		<a
-			class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold"
+			class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
 			href="/Events"
 			rel="ugc"
 		>
@@ -54,7 +54,7 @@
 	</a>
 
 	<section class="flex">
-		<button class="bg-[#BC5C28] text-sm px-5 py-2">Order Online</button>
+		<button class="bg-[#BC5C28] text-xs md:text-sm px-5 py-2">Order Online</button>
 		<label class="cursor-pointer grid place-items-center">
 			<input
 				type="checkbox"
@@ -175,6 +175,7 @@
 <style>
 	* {
 		max-width: 1440px;
+		overflow: hidden;
 	}
 
 	a {

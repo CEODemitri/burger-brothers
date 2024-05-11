@@ -1,6 +1,7 @@
 <script>
 	// Supports weights 300-700
 	import Cards from '../components/Cards/Cards.svelte';
+	import Review from '../components/Review.svelte';
 	import SectionHeader from '../components/SectionHeader.svelte';
 
 	// starter items
@@ -94,7 +95,9 @@
 		<div class="overlay"></div>
 
 		<article class="ml-10 pt-10 text-white">
-			<h1 class="text-7xl lg:text-[96px] uppercase ff-serif">Burger Brothers</h1>
+			<h1 class="text-5xl md:text-7xl lg:text-[96px] uppercase ff-serif relative">
+				Burger Brothers
+			</h1>
 			<p class="lg:w-[966px] text-sm p-1 mt-5">
 				Lorem ipsum dolor sit amet consectetur. Placerat sed integer fusce venenatis. Lacinia
 				pretium magna maecenas quis. Egestas tortor quam cursus tellus.
@@ -105,8 +108,8 @@
 	<!-- call to action space -->
 	<div class="menu hidden sm:block h-fit">
 		<section class="triangle"></section>
-		<section class="box max-w-screen-md fs-300 flex items-center">
-			<p class="links">
+		<section class="box max-w-screen-md max-h-44 fs-300 flex items-center">
+			<p class="links border-r-2">
 				<!-- icon -->
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +125,7 @@
 				</svg>
 				<span> Catering </span>
 			</p>
-			<p class="links">
+			<p class="links border-r-2">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="70"
@@ -166,9 +169,13 @@
 	<!-- popular menu -->
 	<SectionHeader {...popular} />
 	<div class="text-dark">
-		<article class="flex justify-center ff-sans m-5 fs-400">
+		<article class="flex justify-center ff-sans m-5 fs-400 flex-wrap">
 			{#each tabs as tab}
-				<a href={tab.path} on:click|preventDefault={() => selectTab(tab)}>{tab.name}</a>
+				<a
+					href={tab.path}
+					on:click|preventDefault={() => selectTab(tab)}
+					class="border px-6 py-1 border-purple-950 rounded-md mx-3">{tab.name}</a
+				>
 			{/each}
 		</article>
 	</div>
@@ -181,13 +188,18 @@
 
 	<!-- review section -->
 	<SectionHeader {...reviews} />
+	<div class="flex justify-center flex-wrap p-5">
+		<Review />
+		<Review />
+		<Review />
+	</div>
 </div>
 
 <style>
 	.home {
 		margin: auto;
 		max-width: 1440px;
-		height: 3080px;
+		height: 3680px;
 		background: linear-gradient(180deg, #fff, #e2ddc2);
 	}
 
@@ -202,7 +214,7 @@
 	}
 
 	.overlay {
-		background-color: rgba(0, 0, 0, 0.2);
+		background-color: rgba(0, 0, 0, 0.4);
 		width: 100%;
 		height: 100%;
 		position: absolute;
