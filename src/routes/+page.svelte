@@ -88,6 +88,13 @@
 		description:
 			'Lorem ipsum dolor sit am, consect et ning ut Lorem ipsum dolor sit am. Ere metus in ning versert but auctor limere vel'
 	};
+
+	const about = {
+		pill: 'Burgerology',
+		title: 'Who Are We?',
+		description:
+			'Lorem ipsum dolor sit amet consectetur. Tincidunt commodo amet pretium sed libero eu curabitur.'
+	};
 </script>
 
 <div class="home">
@@ -188,19 +195,33 @@
 
 	<!-- review section -->
 	<SectionHeader {...reviews} />
-	<div class="flex justify-center flex-wrap p-5">
+	<div class="flex justify-around flex-wrap p-5">
 		<Review />
 		<Review />
 		<Review />
 	</div>
+
+	<!-- about section -->
+	<SectionHeader {...about} />
+	<p class="text-black w-[25ch] md:w-[75ch] m-auto text-md p-3">
+		Sit sagittis elit quam tincidunt sed orci ultricies et vitae. Proin dui elit sit orci bibendum
+		magna tempus euismod. Augue pretium quisque magna volutpat cras adipiscing tellus. Est et
+		vestibulum amet arcu non euismod. Et leo porta ultricies et nisl velit massa.
+	</p>
 </div>
 
 <style>
 	.home {
 		margin: auto;
 		max-width: 1440px;
-		height: 3680px;
+		height: 160rem;
 		background: linear-gradient(180deg, #fff, #e2ddc2);
+	}
+
+	@media (max-width: 767px) {
+		.home {
+			height: 4300px;
+		}
 	}
 
 	.hero-section {
