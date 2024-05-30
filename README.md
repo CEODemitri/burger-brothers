@@ -18,13 +18,10 @@ shop: diff vibe .. nav, popular, all products, categories
 - [ ] set foundations
 1. [x] home
 2. [] menu
-a. fix ui mediumcard component. add more feature details
 3. [x] about
 4. [] faq
 - [ ] user authentication
 - [ ] menu management: create a dynamic menu that can be updated with new items and descriptions
 - [ ] ordering system: develop a system for placing and tracking orders including takeout and delivery options
-- [ ] payment intergration: portal for silliness
 - [ ] responsive design
-- [ ] backend intergration
 - [ ] allow users to leave feedback on orders
