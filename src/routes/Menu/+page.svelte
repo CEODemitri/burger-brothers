@@ -1,6 +1,6 @@
 <script>
-  import { fade } from 'svelte/transition'; 
-	import MediumCards from '../components/Cards/MediumCards.svelte';
+	import { fade } from 'svelte/transition';
+	import MediumCards from '../../components/Cards/MediumCards.svelte';
 	let currentPage = 0;
 	const pages = Array(2).fill(0); // Change this to the number of pages you have
 
@@ -75,7 +75,9 @@
 	<section class="w-full py-12 lg:py-24">
 		<div class="container grid items-center justify-center gap-4 px-4 text-center md:gap-10">
 			<div class="space-y-4 lg:space-y-6">
-				<h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl ff-serif uppercase">Menu</h1>
+				<h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl ff-serif uppercase">
+					Menu
+				</h1>
 				<p
 					class="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 ff-sans"
 				>
@@ -87,16 +89,15 @@
 	</section>
 
 	<!-- starters -->
-	<div
-		class="rounded-lg border bg-card text-card-foreground shadow-sm bg-white"
-		data-v0-t="card"
-	>
+	<div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-white" data-v0-t="card">
 		<div class="p-6 flex flex-row space-y-0 items-start gap-2">
 			<div class="grid gap-1">
 				<h3 class="text-5xl font-semibold whitespace-nowrap leading-none tracking-tight uppercase">
 					Starters
 				</h3>
-				<p class="text-sm text-muted-foreground text-accent ff-sans">Delicious appetizers to kick off your meal.</p>
+				<p class="text-sm text-muted-foreground text-accent ff-sans">
+					Delicious appetizers to kick off your meal.
+				</p>
 			</div>
 		</div>
 
@@ -113,7 +114,7 @@
 				<div
 					class="container grid items-start gap-6 px-4 md:grid-cols-2 md:gap-10 lg:grid-cols-3"
 					style="display: {currentPage === i ? 'block' : 'none'};"
-          transition:fade={{duration: 500}}
+					transition:fade={{ duration: 500 }}
 				>
 					{#each cardData[i] as card}
 						<MediumCards
@@ -129,34 +130,69 @@
 	</div>
 
 	<!-- entrees -->
-	<div class="rounded-lg border bg-card text-card-foreground shadow-sm flex justify-center" data-v0-t="card">
+	<div
+		class="rounded-lg border bg-card text-card-foreground shadow-sm flex justify-center"
+		data-v0-t="card"
+	>
 		<div class="p-6 flex flex-row space-y-0 items-center gap-2">
 			<div class="grid gap-1">
-				<h3 class="text-5xl font-semibold whitespace-nowrap leading-none tracking-tight">Entrees</h3>
-				<p class="text-sm text-muted-foreground">Take a peek. Do not bite the screen, only images.</p>
+				<h3 class="text-5xl font-semibold whitespace-nowrap leading-none tracking-tight">
+					Entrees
+				</h3>
+				<p class="text-sm text-muted-foreground">
+					Take a peek. Do not bite the screen, only images.
+				</p>
 			</div>
 		</div>
 		<div class="w-96 carousel rounded-box">
 			<div class="carousel-item w-full">
-			  <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
-			</div> 
+				<img
+					src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
+					class="w-full"
+					alt="Tailwind CSS Carousel component"
+				/>
+			</div>
 			<div class="carousel-item w-full">
-			  <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
-			</div> 
+				<img
+					src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
+					class="w-full"
+					alt="Tailwind CSS Carousel component"
+				/>
+			</div>
 			<div class="carousel-item w-full">
-			  <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
-			</div> 
+				<img
+					src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
+					class="w-full"
+					alt="Tailwind CSS Carousel component"
+				/>
+			</div>
 			<div class="carousel-item w-full">
-			  <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
-			</div> 
+				<img
+					src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
+					class="w-full"
+					alt="Tailwind CSS Carousel component"
+				/>
+			</div>
 			<div class="carousel-item w-full">
-			  <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
-			</div> 
+				<img
+					src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
+					class="w-full"
+					alt="Tailwind CSS Carousel component"
+				/>
+			</div>
 			<div class="carousel-item w-full">
-			  <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
-			</div> 
+				<img
+					src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
+					class="w-full"
+					alt="Tailwind CSS Carousel component"
+				/>
+			</div>
 			<div class="carousel-item w-full">
-			  <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
+				<img
+					src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
+					class="w-full"
+					alt="Tailwind CSS Carousel component"
+				/>
 			</div>
 		</div>
 	</div>
@@ -176,49 +212,49 @@
 						<img
 							src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
 							class="w-full"
-              alt="coming soon"
+							alt="coming soon"
 						/>
 					</div>
 					<div class="carousel-item w-1/2">
 						<img
 							src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
 							class="w-full"
-              alt="coming soon"
+							alt="coming soon"
 						/>
 					</div>
 					<div class="carousel-item w-1/2">
 						<img
 							src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
 							class="w-full"
-              alt="coming soon"
+							alt="coming soon"
 						/>
 					</div>
 					<div class="carousel-item w-1/2">
 						<img
 							src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
 							class="w-full"
-              alt=""
+							alt=""
 						/>
 					</div>
 					<div class="carousel-item w-1/2">
 						<img
 							src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
 							class="w-full"
-              alt="coming soon"
+							alt="coming soon"
 						/>
 					</div>
 					<div class="carousel-item w-1/2">
 						<img
 							src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
 							class="w-full"
-              alt="coming soon"
+							alt="coming soon"
 						/>
 					</div>
 					<div class="carousel-item w-1/2">
 						<img
 							src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
 							class="w-full"
-              alt="coming soon"
+							alt="coming soon"
 						/>
 					</div>
 				</div>
@@ -253,7 +289,9 @@
 	<div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-white" data-v0-t="card">
 		<div class="p-6 flex flex-row space-y-0 items-start gap-2">
 			<div class="grid gap-1">
-				<h3 class="text-5xl font-semibold whitespace-nowrap leading-none tracking-tight">Old People Section</h3>
+				<h3 class="text-5xl font-semibold whitespace-nowrap leading-none tracking-tight">
+					Old People Section
+				</h3>
 				<p class="text-sm text-muted-foreground">Wash it down with a classic lift.</p>
 			</div>
 		</div>
@@ -264,49 +302,49 @@
 						<img
 							src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
 							class="w-full"
-              alt="coming soon"
+							alt="coming soon"
 						/>
 					</div>
 					<div class="carousel-item w-1/2">
 						<img
 							src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
 							class="w-full"
-              alt="coming soon"
+							alt="coming soon"
 						/>
 					</div>
 					<div class="carousel-item w-1/2">
 						<img
 							src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
 							class="w-full"
-              alt="coming soon"
+							alt="coming soon"
 						/>
 					</div>
 					<div class="carousel-item w-1/2">
 						<img
 							src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
 							class="w-full"
-              alt=""
+							alt=""
 						/>
 					</div>
 					<div class="carousel-item w-1/2">
 						<img
 							src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
 							class="w-full"
-              alt="coming soon"
+							alt="coming soon"
 						/>
 					</div>
 					<div class="carousel-item w-1/2">
 						<img
 							src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
 							class="w-full"
-              alt="coming soon"
+							alt="coming soon"
 						/>
 					</div>
 					<div class="carousel-item w-1/2">
 						<img
 							src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
 							class="w-full"
-              alt="coming soon"
+							alt="coming soon"
 						/>
 					</div>
 				</div>

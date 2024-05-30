@@ -120,10 +120,8 @@
 				<!-- icon -->
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					width="70"
-					height="82"
 					fill="currentColor"
-					class="bi bi-people"
+					class="bi bi-people w-70 h-10"
 					viewBox="0 0 16 16"
 				>
 					<path
@@ -135,10 +133,8 @@
 			<p class="links border-r-2">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					width="70"
-					height="82"
 					fill="currentColor"
-					class="bi bi-receipt-cutoff"
+					class="bi bi-receipt-cutoff w-70 h-10"
 					viewBox="0 0 16 16"
 				>
 					<path
@@ -153,10 +149,8 @@
 			<p class="links">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					width="70"
-					height="82"
 					fill="currentColor"
-					class="bi bi-pin-map"
+					class="bi bi-pin-map w-70 h-10"
 					viewBox="0 0 16 16"
 				>
 					<path

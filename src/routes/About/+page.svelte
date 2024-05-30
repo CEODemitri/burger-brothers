@@ -14,7 +14,7 @@
 			class="aspect-[2/1] overflow-hidden rounded-lg object-cover object-center"
 		/>
 		<div class="grid gap-2">
-			<h1 class="text-3xl font-bold tracking-tighter sm:text-4xl">Our Locations</h1>
+			<h1 class="text-3xl font-bold tracking-tighter sm:text-4xl text-[#232135]">Our Locations</h1>
 			<p
 				class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
 			>

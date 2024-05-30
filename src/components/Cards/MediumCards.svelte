@@ -8,7 +8,7 @@
 	export let description;
 </script>
 
-<div class="flex flex-col space-y-2 p-2 text-left">
+<div class="flex flex-col space-y-2 p-2 text-left w-[310px]">
 	<img
 		{src}
 		width="300"
@@ -22,7 +22,7 @@
 		<h3 class="text-xl font-bold">{name}</h3>
 		<p class="w-72">{description}</p>
 
-		<form action="" class="flex justify-center items-center gap-7">
+		<form action="" class="">
 			<div class="grid gap-2">
 				<label
 					class="font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-sm"
