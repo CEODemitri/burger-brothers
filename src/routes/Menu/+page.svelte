@@ -108,11 +108,11 @@
 			{/each}
 		</div>
 
-		<div class="w-5/6 ml-5" id="page">
+		<div class="w-5/6 ml-5 mb-10" id="page">
 			{#each pages as _, i}
 				<!-- Page {i + 1} -->
 				<div
-					class="container grid items-start gap-6 px-4 md:grid-cols-2 md:gap-10 lg:grid-cols-3"
+					class="container grid items-start gap-6 md:grid-cols-2 md:gap-10 lg:grid-cols-3"
 					style="display: {currentPage === i ? 'block' : 'none'};"
 					transition:fade={{ duration: 500 }}
 				>
