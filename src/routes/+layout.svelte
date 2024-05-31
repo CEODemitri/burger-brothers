@@ -11,7 +11,7 @@
 			xmlns="http://www.w3.org/2000/svg"
 			width="25"
 			height="23"
-			fill="orange"
+			fill="bg-action"
 			class="bi bi-list"
 			viewBox="0 0 16 16"
 		>
@@ -54,7 +54,7 @@
 	</a>
 
 	<section class="flex">
-		<button class="bg-[#BC5C28] text-xs md:text-sm px-5 py-2">Order Online</button>
+		<button class="bg-action text-xs md:text-sm px-5 py-2">Order Online</button>
 		<label class="cursor-pointer grid place-items-center">
 			<input
 				type="checkbox"

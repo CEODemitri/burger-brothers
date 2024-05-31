@@ -8,7 +8,7 @@
 
 :root {
     /* colors */
-    --color-base: 22, 85%, 43%;
+    --color-action: 22, 85%, 43%;
     --color-medium: 41, 71%, 74%;
     --color-dark: 250, 27%, 17%;
     --color-accent: 68, 21%, 72%;
@@ -143,8 +143,8 @@
   .bg-dark {
     background-color: hsl( var(--color-dark) );
   }
-  .bg-base {
-    background-color: hsl( var(--color-base) );
+  .bg-action {
+    background-color: hsl( var(--color-action) );
   }
   .bg-light {
     background-color: hsl( var(--color-light) );
