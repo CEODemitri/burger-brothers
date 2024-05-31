@@ -16,6 +16,7 @@ shop: diff vibe .. nav, popular, all products, categories
 ## TODO
 
 - [ ] set foundations
+a1#1. [] design system
 1. [x] home
 2. [] menu
 3. [x] about

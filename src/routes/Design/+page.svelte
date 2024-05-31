@@ -1,4 +1,4 @@
-<div class="text-dark p-5">
+<div class="text-dark p-5 w-screen">
 	<h1 class="ff-sans">Design System</h1>
 
 	<!-- layout -->
@@ -20,7 +20,7 @@
 	<section class="p-8">
 		<h2><span class="text-sm">I</span>COLORS</h2>
 
-		<div class="flex justify-around p-2">
+		<div class="flex flex-wrap w-5/6 justify-around p-2">
 			<!-- 1 color -->
 			<article class="flex flex-col">
 				<!-- color -->
@@ -86,10 +86,11 @@
 	<section class="p-8">
 		<h2><span class="text-sm">II</span>TYPOGRAPHY</h2>
 
-		<div class="flex">
+		<div class="flex flex-wrap justify-between w-full">
+			<!-- typography first column -->
 			<div class="p-10 div">
 				<article>
-					<section class="text-sm flex w-2/3 justify-between">
+					<section class="text-sm flex justify-between">
 						<p>Heading 1</p>
 						<p>Fugaz One</p>
 						<p>Serif</p>
@@ -103,7 +104,7 @@
 				</article>
 
 				<article>
-					<section class="text-sm flex w-2/3 justify-between">
+					<section class="text-sm flex justify-between">
 						<p>Heading 2</p>
 						<p>Fugaz One</p>
 						<p>Serif</p>
@@ -112,12 +113,12 @@
 					</section>
 
 					<section class="text-[80px] ff-serif">
-						<h2 class="letter-spacing-2">Natural Source</h2>
+						<h2 class="letter-spacing-2">All Natural</h2>
 					</section>
 				</article>
 
 				<article>
-					<section class="text-sm flex w-2/3 justify-between">
+					<section class="text-sm flex justify-between">
 						<p>Heading 3</p>
 						<p>Fugaz One</p>
 						<p>Serif</p>
@@ -131,7 +132,7 @@
 				</article>
 
 				<article>
-					<section class="text-sm flex w-2/3 justify-between">
+					<section class="text-sm flex justify-between">
 						<p>Heading 4</p>
 						<p>Fugaz One</p>
 						<p>Serif</p>
@@ -145,49 +146,86 @@
 				</article>
 
 				<article>
-					<section class="text-sm flex w-2/3 justify-between">
+					<section class="text-sm flex justify-between">
 						<p>Heading 5</p>
 						<p>Comfortaa Variable</p>
 						<p>Sans</p>
 						<p>40px</p>
 					</section>
 
-					<section class="text-[40px] ff-serif">
+					<section class="text-[40px] ff-sans">
 						<h5>Thank You</h5>
 					</section>
 				</article>
 			</div>
 
 			<!-- typography second column -->
-			<div class="p-10">
+			<div class="p-10 w-1/2 div">
 				<article>
-					<section class="text-sm flex w-2/3 justify-between">
-						<p>Heading 5</p>
+					<section class="text-sm flex justify-between">
+						<p>Subheading 1</p>
 						<p>Comfortaa Variable</p>
 						<p>Sans</p>
-						<p>40px</p>
+						<p>32px</p>
 					</section>
 
-					<section class="text-[40px] ff-serif">
+					<section class="text-[32px] ff-serif">
 						<h5>Thank You</h5>
+					</section>
+				</article>
+
+				<article>
+					<section class="text-sm flex justify-between">
+						<p>Subheading 2</p>
+						<p>Comfortaa Variable</p>
+						<p>Sans</p>
+						<p>26px</p>
+					</section>
+
+					<section class="text-[26px] ff-sans">
+						<h5>Big burgers for the biggest hearts.</h5>
+					</section>
+				</article>
+
+				<article>
+					<section class="text-sm flex justify-between">
+						<p>Body text</p>
+						<p>Comfortaa Variable</p>
+						<p>Sans</p>
+						<p>20px</p>
+						<p>LH7</p>
+					</section>
+
+					<section class="text-[20px] ff-sans leading-7">
+						<h5>Copy for a Burger restaraunt: Come one, come all. Celebrate your tummy with a delicious, mouth-watering burger, one of a kind and unlike any other. We promise fresh ingredients and wholesome cooks, obliged and celebrated for cooking you the awesomest Burger on this corner of earth.</h5>
+					</section>
+				</article>
+
+				<article>
+					<section class="text-sm flex justify-between">
+						<p>Navigation</p>
+						<p>Comfortaa Variable</p>
+						<p>Sans</p>
+						<p>20px</p>
+					</section>
+
+					<section class="text-[13px] ff-sans uppercase">
+						<p>Menu</p>
 					</section>
 				</article>
 			</div>
 		</div>
 	</section>
+
+	<section class="p-8">
+		<h2><span class="text-sm">III</span>ICONS</h2>
+
+		<!-- place icons in side here -->
+        <div></div>
+	</section>
 </div>
 
 <style>
-	h1,
-	h2,
-	h3,
-	h4,
-	h5 {
-		padding: 0;
-		margin: 0;
-		box-sizing: content-box;
-	}
-
 	h2 span {
 		margin-right: 0.5em;
 		background-color: orange;
