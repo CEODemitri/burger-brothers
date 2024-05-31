@@ -4,7 +4,7 @@
 	<section>
 		<h2><span class="text-sm">I</span>COLORS</h2>
 
-		<div>
+		<div class="flex justify-around">
 			<!-- 1 color -->
 			<article>
 				<!-- color -->
@@ -37,7 +37,7 @@
 				<!-- name and description -->
 				<section class="text-sm">
 					<p>Accent</p>
-					<p>50, 39%, 82%</p>
+					<p>68, 21%, 72%</p>
 				</section>
 			</article>
 
@@ -49,7 +49,7 @@
 				<!-- name and description -->
 				<section class="text-sm">
 					<p>Medium</p>
-					<p>50, 39%, 82%</p>
+					<p>41, 71%, 74%</p>
 				</section>
 			</article>
 
@@ -61,7 +61,7 @@
 				<!-- name and description -->
 				<section class="text-sm">
 					<p>Base</p>
-					<p>50, 39%, 82%</p>
+					<p>22, 85%, 43%</p>
 				</section>
 			</article>
 		</div>
