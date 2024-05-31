@@ -10,7 +10,7 @@
 
 <div class="w-72 bg-[#D6CFA9] text-[#232135] relative">
 	<img {src} alt={name} srcset="" class="rounded-md" />
-	<div class="info h-28 mb-12 p-2">
+	<div class="info h-fit mb-12 p-2">
 		<h2 class="text-2xl">{name}</h2>
 		<p class="text-xs text-neutral-500">{description}</p>
 		<button class="bg-action text-white px-5 py-2 mt-5 ml-40 rounded-md text-sm">Add Item</button>

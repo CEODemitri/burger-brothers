@@ -7,19 +7,7 @@
 
 <header class="flex justify-between items-center px-5 m-auto">
 	<nav class="flex gap-4 sm:gap-6 text-dark">
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="25"
-			height="23"
-			fill="bg-action"
-			class="bi bi-list"
-			viewBox="0 0 16 16"
-		>
-			<path
-				fill-rule="evenodd"
-				d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-			/>
-		</svg>
+		<i class="bi bi-list"></i>
 		<a
 			class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
 			href="/Menu"

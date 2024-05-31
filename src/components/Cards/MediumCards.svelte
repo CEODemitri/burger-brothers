@@ -8,7 +8,7 @@
 	export let description;
 </script>
 
-<div class="card card-side bg-base-100 shadow-xl mt-5">
+<div class="card card-side bg-base-100 shadow-xl mt-5 min-w-[480px]">
 	<figure><img {src} alt={name} class="w-72" /></figure>
 	<div class="card-body">
 		<h2 class="card-title">{name}</h2>
@@ -57,6 +57,8 @@
 				</button>
 			</form>
 		</div>
+
+		<p class="absolute top-0 pr-5 pt-2 text-white">{price}</p>
 	</div>
 </div>
 

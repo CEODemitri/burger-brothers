@@ -1,3 +1,24 @@
+<script>
+	import Card from '../../components/Cards/Cards.svelte';
+	import MediumCards from '../../components/Cards/MediumCards.svelte';
+
+	const melt = {
+		src: '/specials/grill-quinoa.png',
+		price: 85.99,
+		name: 'Grilled Quinoa',
+		description:
+			'You smell me. Quinoa from the untapped valleys you and I never seen, across this earth. Finest ingredients.'
+	};
+
+	const quinny = {
+		src: '/specials/grill-quinoa.png',
+		price: 85.99,
+		name: 'Grilled Quinoa',
+		description:
+			'You smell me. Quinoa from the untapped valleys across this earth. Finest ingredients.'
+	};
+</script>
+
 <div class="text-dark p-5 w-screen">
 	<h1 class="ff-sans">Design System</h1>
 
@@ -196,8 +217,13 @@
 						<p>LH7</p>
 					</section>
 
-					<section class="text-[20px] ff-sans leading-7">
-						<h5>Copy for a Burger restaraunt: Come one, come all. Celebrate your tummy with a delicious, mouth-watering burger, one of a kind and unlike any other. We promise fresh ingredients and wholesome cooks, obliged and celebrated for cooking you the awesomest Burger on this corner of earth.</h5>
+					<section class="text-[18px] ff-sans leading-7">
+						<h5>
+							Copy for a Burger restaraunt: Come one, come all. Celebrate your tummy with a
+							delicious, mouth-watering burger, one of a kind and unlike any other. We promise fresh
+							ingredients and wholesome cooks, obliged and celebrated for cooking you the awesomest
+							Burger on this corner of earth.
+						</h5>
 					</section>
 				</article>
 
@@ -221,7 +247,29 @@
 		<h2><span class="text-sm">III</span>ICONS</h2>
 
 		<!-- place icons in side here -->
-        <div></div>
+		<div class="m-10">
+			<i class="bi bi-list"></i>
+			<i class="bi bi-tree"></i>
+		</div>
+	</section>
+
+	<section class="p-8">
+		<h2><span class="text-sm">IV</span>COMPONENTS</h2>
+
+		<div class="p-10">
+			<article>
+				<Card {...melt} />
+				<MediumCards {...quinny} />
+
+				<div class="rating">
+					<input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+					<input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+					<input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+					<input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+					<input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+				</div>
+			</article>
+		</div>
 	</section>
 </div>
 

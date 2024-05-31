@@ -15,12 +15,15 @@ shop: diff vibe .. nav, popular, all products, categories
 
 ## TODO
 
-- [ ] set foundations
-a1#1. [] design system
-1. [x] home
-2. [] menu
-3. [x] about
-4. [] faq
+0. [x] set foundations
+1. [] design system
+   a. icons and components
+2. [x] home
+3. [] menu
+4. [x] about
+5. [] faq
+
+- [] change Daisy Theme Colors
 - [ ] user authentication
 - [ ] menu management: create a dynamic menu that can be updated with new items and descriptions
 - [ ] ordering system: develop a system for placing and tracking orders including takeout and delivery options
