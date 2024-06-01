@@ -98,17 +98,26 @@
 </script>
 
 <div class="home">
-	<div class="hero-section">
-		<div class="overlay"></div>
-
-		<article class="ml-10 pt-10 text-white">
-			<h1 class="text-5xl md:text-7xl lg:text-[96px] uppercase ff-serif relative">
+	<div class="hero-section bg-dark">
+		<article class="ml-10 pt-6 text-white">
+			<h1 class="text-5xl md:text-7xl lg:text-[96px]leading-3 relative ff-serif">
 				Burger Brothers
 			</h1>
-			<p class="lg:w-[966px] text-sm p-1 mt-5">
+			<p class="lg:w-[966px] text-sm md:text-[20px] p-1 mt-5">
 				Lorem ipsum dolor sit amet consectetur. Placerat sed integer fusce venenatis. Lacinia
 				pretium magna maecenas quis. Egestas tortor quam cursus tellus.
 			</p>
+
+			<div class="flex">
+				<section class="bg-white p-2 w-fit">
+					<div class="bg-light w-72 h-32 rounded-md m-auto">
+						<p class="absolute w-60 ml-5 text-[20px]">"I can't get enough!" - Happy customer</p>
+						<img src="../landing/BBean.png" alt="" class="w-72" />
+					</div>
+				</section>
+
+				<section></section>
+			</div>
 		</article>
 	</div>
 
@@ -170,7 +179,7 @@
 	<!-- popular menu -->
 	<SectionHeader {...popular} />
 	<div class="text-dark">
-		<article class="flex justify-center ff-sans m-5 fs-400 flex-wrap">
+		<article class="flex justify-center ff-sans m-5 text-[20px] flex-wrap">
 			{#each tabs as tab}
 				<a
 					href={tab.path}
@@ -221,18 +230,11 @@
 	.hero-section {
 		max-width: 1440px;
 		height: 600px;
-		background: url('../landing/heroImg.png');
+		/* background: url('../landing/heroImg.png');
 		background-position: center;
-		background-repeat: no-repeat;
+		background-repeat: no-repeat; */
 		position: relative;
 		margin: auto;
-	}
-
-	.overlay {
-		background-color: rgba(0, 0, 0, 0.4);
-		width: 100%;
-		height: 100%;
-		position: absolute;
 	}
 
 	.menu {

@@ -183,20 +183,6 @@
     font-family: var(--ff-sans);
   }
   
-  .letter-spacing-1 {
-    letter-spacing: 4.75px;
-  }
-  .letter-spacing-2 {
-    letter-spacing: 2.7px;
-  }
-  .letter-spacing-3 {
-    letter-spacing: 2.35px;
-  }
-  
-  .uppercase {
-    text-transform: uppercase;
-  }
-  
   .fs-900 {
     font-size: var(--fs-900);
   }

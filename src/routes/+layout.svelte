@@ -6,24 +6,24 @@
 </script>
 
 <header class="flex justify-between items-center px-5 m-auto">
-	<nav class="flex gap-4 sm:gap-6 text-dark">
+	<nav class="flex gap-4 sm:gap-6 text-dark uppercase items-center">
 		<i class="bi bi-list"></i>
 		<a
-			class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
+			class="hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
 			href="/Menu"
 			rel="ugc"
 		>
 			Menu
 		</a>
 		<a
-			class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
+			class="hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
 			href="/About"
 			rel="ugc"
 		>
 			About
 		</a>
 		<a
-			class="text-sm font-medium hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
+			class="hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
 			href="/Events"
 			rel="ugc"
 		>
