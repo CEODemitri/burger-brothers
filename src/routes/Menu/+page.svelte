@@ -71,25 +71,30 @@
 	];
 </script>
 
-<main class="flex-1 w-full bg-light text-dark">
-	<section class="w-full py-12 lg:py-24">
-		<div class="container grid items-center justify-center gap-4 px-4 text-center md:gap-10">
-			<div class="space-y-4 lg:space-y-6">
+<main class="flex-1 w-full bg-light">
+	<!-- header section -->
+	<section class="w-full">
+		<div class="container h-[450px] bg-dark grid grid-cols-12 grid-rows-4">
+			<div class="space-y-4 lg:space-y-6 col-span-3 row-span-4">
 				<h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl ff-serif uppercase">
 					Menu
 				</h1>
 				<p
-					class="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 ff-sans"
+					class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 ff-sans"
 				>
 					Handcrafted with love. Enjoy our delicious burgers. Starters, desserts, drinks, our menu
 					has something for the whole table.
 				</p>
 			</div>
+
+			<div class="col-span-9 row-span-4">
+				<img src="../../menu.png" alt="" />
+			</div>
 		</div>
 	</section>
 
 	<!-- starters -->
-	<div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-white" data-v0-t="card">
+	<div class="rounded-3xl border bg-card text-card-foreground shadow-sm bg-white" data-v0-t="card">
 		<div class="p-6 flex flex-row space-y-0 items-start gap-2">
 			<div class="grid gap-1">
 				<h3 class="text-5xl font-semibold whitespace-nowrap leading-none tracking-tight uppercase">
@@ -198,7 +203,7 @@
 	</div>
 
 	<!-- drinks -->
-	<div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-white" data-v0-t="card">
+	<div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
 		<div class="p-6 flex flex-row space-y-0 items-start gap-2">
 			<div class="grid gap-1">
 				<h3 class="text-5xl font-semibold whitespace-nowrap leading-none tracking-tight">Drinks</h3>
@@ -263,10 +268,7 @@
 	</div>
 
 	<!-- desserts -->
-	<div
-		class="rounded-lg border bg-card text-card-foreground shadow-sm bg-neutral-300"
-		data-v0-t="card"
-	>
+	<div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
 		<div class="p-6 flex flex-row space-y-0 items-start gap-2">
 			<div class="grid gap-1">
 				<h3 class="text-5xl font-semibold whitespace-nowrap leading-none tracking-tight">
@@ -286,7 +288,7 @@
 	</div>
 
 	<!-- old people -->
-	<div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-white" data-v0-t="card">
+	<div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
 		<div class="p-6 flex flex-row space-y-0 items-start gap-2">
 			<div class="grid gap-1">
 				<h3 class="text-5xl font-semibold whitespace-nowrap leading-none tracking-tight">
