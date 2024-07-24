@@ -79,21 +79,20 @@
 		pill: 'Burgertastic',
 		title: 'Popular Menu',
 		description:
-			'Lorem ipsum dolor sit am, consect et ning ut Lorem ipsum dolor sit am. Ere metus in ning versert but auctor limere vel'
+			'Our burgers are meticulously crafted using only the finest ingredients. Each bite bursts with flavor and freshness, ensuring a culinary experience that delights every palate.'
 	};
 
 	const reviews = {
 		pill: 'Reviews',
 		title: 'Big Taste. Bigger Reviews.',
 		description:
-			'Lorem ipsum dolor sit am, consect et ning ut Lorem ipsum dolor sit am. Ere metus in ning versert but auctor limere vel'
+			'Join the Burger Brothers community and share your experience with us! Discover why our customers rave about Burger Brothers:'
 	};
 
 	const about = {
 		pill: 'Burgerology',
 		title: 'Who Are We?',
-		description:
-			'Lorem ipsum dolor sit amet consectetur. Tincidunt commodo amet pretium sed libero eu curabitur.'
+		description: `We support local farmers and source sustainable ingredients whenever possible. Our commitment to quality extends from farm to table, ensuring you enjoy food that's good for you and the planet.`
 	};
 </script>
 
@@ -106,8 +105,10 @@
 				Burger Brothers
 			</h1>
 			<p class="lg:w-[966px] text-sm p-1 mt-5">
-				Lorem ipsum dolor sit amet consectetur. Placerat sed integer fusce venenatis. Lacinia
-				pretium magna maecenas quis. Egestas tortor quam cursus tellus.
+				Discover a burger experience like no other at Burger Brothers. We are more than just a
+				restaurant; we are a celebration of all things delicious, juicy, and perfectly crafted
+				between two buns. From our hand-selected ingredients to our passion for flavor, every burger
+				tells a story of quality and satisfaction.
 			</p>
 		</article>
 	</div>
@@ -190,17 +191,28 @@
 	<!-- review section -->
 	<SectionHeader {...reviews} />
 	<div class="flex justify-around flex-wrap p-5">
-		<Review />
-		<Review />
-		<Review />
+		<Review
+			reviewer="Emily T."
+			comment="'Delicious burgers with top-notch ingredients! My favorite spot for a juicy, satisfying meal.'"
+		/>
+		<Review
+			reviewer="Michael S."
+			comment="'The variety of flavors is amazing. Every burger is a masterpiece!'"
+		/>
+		<Review
+			reviewer="Florida E."
+			comment="'Great atmosphere and friendly service. Perfect place to enjoy a burger with friends.'"
+		/>
 	</div>
 
 	<!-- about section -->
 	<SectionHeader {...about} />
 	<p class="text-black w-[25ch] md:w-[75ch] m-auto text-md p-3">
-		Sit sagittis elit quam tincidunt sed orci ultricies et vitae. Proin dui elit sit orci bibendum
-		magna tempus euismod. Augue pretium quisque magna volutpat cras adipiscing tellus. Est et
-		vestibulum amet arcu non euismod. Et leo porta ultricies et nisl velit massa.
+		Located conveniently in the heart of Metropolis, Burger Brothers invites you to indulge in the
+		ultimate burger experience. Whether you dine in, take out, or order online, our commitment to
+		exceptional food and service ensures every visit is a treat. Ready to embark on a burger journey
+		like no other? Join us at Burger Brothers and taste the difference quality makes. Your taste
+		buds will thank you.
 	</p>
 </div>
 
@@ -208,7 +220,7 @@
 	.home {
 		margin: auto;
 		max-width: 1440px;
-		height: 165rem;
+		height: fit-content;
 		background: linear-gradient(180deg, #fff, #e2ddc2);
 	}
 

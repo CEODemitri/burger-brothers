@@ -19,6 +19,7 @@ shop: diff vibe .. nav, popular, all products, categories
 1. [] design system
    a. icons and components
 2. [x] home
+       a. Real Copy
 3. [] menu
 4. [x] about
 5. [] faq
@@ -29,3 +30,9 @@ shop: diff vibe .. nav, popular, all products, categories
 - [ ] ordering system: develop a system for placing and tracking orders including takeout and delivery options
 - [ ] responsive design
 - [ ] allow users to leave feedback on orders
+
+# 7 24
+
+1. Update Fonts, Design System
+2. Crispier Ui, seems flat right now.
+3. More Energy
