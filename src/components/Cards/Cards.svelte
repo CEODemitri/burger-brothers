@@ -1,7 +1,4 @@
 <script>
-	import '@fontsource-variable/comfortaa';
-	import '@fontsource/fugaz-one';
-
 	export let src;
 	export let price;
 	export let name;
