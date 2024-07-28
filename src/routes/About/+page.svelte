@@ -1,6 +1,4 @@
 <script>
-  import '@fontsource-variable/comfortaa';
-  import '@fontsource/fugaz-one';   
 </script>
 
 <!-- history, locations, leaders, partners, in the works, -->
@@ -23,9 +21,8 @@
 		</div>
 	</div>
 	<div class="grid max-w-3xl w-full mx-auto gap-6 lg:gap-8">
-		
-    <!-- location 1 -->
-    <div class="relative group mt-10">
+		<!-- location 1 -->
+		<div class="relative group mt-10">
 			<div
 				class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-visible"
 				data-v0-t="card"
@@ -51,7 +48,7 @@
 			Indoor seating for 50 guests. Try our special truffle fries available only at this location.
 		</div>
 
-    <!-- location 2 -->
+		<!-- location 2 -->
 		<div class="relative group mt-10">
 			<div
 				class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-visible"
@@ -62,7 +59,7 @@
 					<h3 class="font-semibold whitespace-nowrap tracking-tight text-2xl">Times Square</h3>
 					<p class="text-sm text-muted-foreground">234 W 42nd St, New York, NY 10036</p>
 				</div>
-        <button
+				<button
 					class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-primary/90 h-11 rounded-md px-8"
 				>
 					Book a Table
@@ -79,7 +76,7 @@
 			location.
 		</div>
 
-    <!-- location 3 -->
+		<!-- location 3 -->
 		<div class="relative group mt-10 mb-16">
 			<div
 				class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-visible"
@@ -90,7 +87,7 @@
 					<h3 class="font-semibold whitespace-nowrap tracking-tight text-2xl">Waikiki Beach</h3>
 					<p class="text-sm text-muted-foreground">2255 Kuhio Ave, Honolulu, HI 96815</p>
 				</div>
-        <button
+				<button
 					class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-primary/90 h-11 rounded-md px-8"
 				>
 					Book a Table
@@ -110,12 +107,15 @@
 </div>
 
 <style>
-  h1, h2, h3 {
-    font-family: 'Fugaz One', system-ui;
-  }
+	h1,
+	h2,
+	h3 {
+		font-family: 'Fugaz One', system-ui;
+	}
 
-  /* switching the button font for a bit of variance on this page */
-  p, button {
-    font-family: 'Comfortaa Variable', sans-serif;
-  }
+	/* switching the button font for a bit of variance on this page */
+	p,
+	button {
+		font-family: 'Comfortaa Variable', sans-serif;
+	}
 </style>
