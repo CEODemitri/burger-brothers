@@ -96,28 +96,31 @@
 	};
 </script>
 
-<div class="home">
-	<div class="hero-section">
-		<div class="overlay"></div>
+<div class="home overflow-hidden">
+	<div class="hero-section text-white relative px-4">
+		<h1
+			class="text-6xl md:text-8xl lg:text-[9rem] leading-[1em] ff-serif text-center uppercase pt-8 text"
+		>
+			<span class="ff-sans">Burger </span>Brothers
+		</h1>
+		<p class="w-[70%] mb-12 lg:w-[550px] text-[0.9rem] ff-body p-4 lg:py-12">
+			Discover a burger experience like no other at Burger Brothers. We are more than just a
+			restaurant; we are a celebration of all things delicious, juicy, and perfectly crafted between
+			two buns. From our hand-selected ingredients to our passion for flavor, every burger tells a
+			story of quality and satisfaction.
+		</p>
 
-		<article class="ml-10 pt-6 text-white">
-			<h1 class="text-5xl md:text-7xl lg:text-[96px]leading-3 relative ff-serif">
-				Burger Brothers
-			</h1>
-			<p class="lg:w-[966px] text-sm p-1 mt-5">
-				Discover a burger experience like no other at Burger Brothers. We are more than just a
-				restaurant; we are a celebration of all things delicious, juicy, and perfectly crafted
-				between two buns. From our hand-selected ingredients to our passion for flavor, every burger
-				tells a story of quality and satisfaction.
-			</p>
-		</article>
-	</div>
+		<img
+			src="../HeroB.png"
+			alt=""
+			class="absolute top-36 lg:top-0 left-[45%] w-[25em] lg:w-[37em] z-50"
+		/>
 
-	<!-- call to action space -->
-	<div class="menu hidden sm:block h-fit">
-		<section class="triangle"></section>
-		<section class="box max-w-screen-md max-h-44 fs-300 flex items-center">
-			<p class="links border-r-2">
+		<!-- call to action space -->
+		<section
+			class="box max-w-screen-md max-h-44 fs-300 flex justify-start items-center w-max-content md:space-x-8"
+		>
+			<p class="links">
 				<!-- icon -->
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +134,7 @@
 				</svg>
 				<span> Catering </span>
 			</p>
-			<p class="links border-r-2">
+			<p class="links">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="currentColor"
@@ -176,7 +179,8 @@
 				<a
 					href={tab.path}
 					on:click|preventDefault={() => selectTab(tab)}
-					class="border px-6 py-1 border-purple-950 rounded-md mx-3">{tab.name}</a
+					class="px-6 py-1 rounded-md mx-3 text-slate-500 hover:bg-orange-600 hover:text-white"
+					>{tab.name}</a
 				>
 			{/each}
 		</article>
@@ -221,59 +225,28 @@
 		margin: auto;
 		max-width: 1440px;
 		height: fit-content;
-		background: linear-gradient(180deg, #fff, #e2ddc2);
-	}
-
-	@media (max-width: 767px) {
-		.home {
-			height: 4400px;
-		}
+		background-color: #1c1b1f;
 	}
 
 	.hero-section {
-		max-width: 1440px;
 		height: 600px;
-		background: url('../landing/heroImg.png');
-		background-position: center;
-		background-repeat: no-repeat;
-		position: relative;
-		margin: auto;
+		background-color: #000000;
 	}
 
-	.overlay {
-		background-color: rgba(0, 0, 0, 0.4);
+	.text {
 		width: 100%;
-		height: 100%;
-		position: absolute;
-	}
-
-	.menu {
-		margin-bottom: -150px;
-	}
-
-	.triangle {
-		width: 0;
-		height: 0;
-		border-left: 40px solid transparent;
-		border-right: 40px solid transparent;
-		border-bottom: 60px solid #232135;
-		position: relative;
-		top: -150px;
-		margin: auto;
+		font-size: clamp(5rem, 10vw, 9rem);
 	}
 
 	.box {
-		width: 60vw;
+		width: 40vw;
 		min-width: fit-content;
-		padding: 0 13px;
-		height: 15vh;
+		padding: 0 36px;
+		height: 14vh;
 		background-color: #232135;
 		position: relative;
-		top: -150px;
-		margin: auto;
+		left: 15vw;
 		border-radius: 30px 0 30px 0;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
 		text-align: center;
 	}
 
@@ -283,5 +256,17 @@
 		justify-content: center;
 		align-items: center;
 		gap: 5px;
+		color: cornflowerblue;
+	}
+
+	@media (max-width: 767px) {
+		.home {
+			height: 4400px;
+		}
+
+		.box {
+			padding: 25px;
+			left: 7%;
+		}
 	}
 </style>

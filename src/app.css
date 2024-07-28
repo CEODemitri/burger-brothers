@@ -16,7 +16,7 @@
     
     /* font-sizes */
     /* !px break a11y! */
-    --fs-900: 9.375rem;
+    --fs-900: 9.8rem;
     --fs-800: 6.25rem;
     --fs-700: 3.5rem;
     --fs-600: 2.25rem;
@@ -26,8 +26,9 @@
     --fs-200: 0.875rem;
   
     /* font-families */
-    --ff-serif: "Fugaz One", serif;
-    --ff-sans: "Comfortaa Variable", sans-serif;
+    --ff-serif: "Finger Paint", serif;
+    --ff-sans: "Hammersmith One", sans-serif;
+    --ff-body: "Heebo Variable", sans-serif;
   }
   
   
@@ -63,7 +64,7 @@
   
   /* Body Set */
   body {
-    font-family: var(--ff-sans);
+    font-family: var(--ff-body);
     font-size: var(--fs-400);
     color: hsl(var(--color-light));
     background-repeat: no-repeat;
@@ -181,6 +182,10 @@
   }
   .ff-sans {
     font-family: var(--ff-sans);
+  }
+
+  .ff-body {
+    font-family: var(--ff-body);
   }
   
   .fs-900 {

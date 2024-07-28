@@ -1,19 +1,30 @@
 <script>
 	import '../app.css';
-	import '@fontsource-variable/comfortaa';
-	import '@fontsource/fugaz-one';
-	import '@fontsource/prosto-one';
+	import '@fontsource/hammersmith-one';
+	import '@fontsource/finger-paint';
 </script>
 
-<header class="flex justify-between items-center px-5 m-auto">
+<header class="flex justify-between items-center px-5 m-auto bg-[#000]">
 	<nav class="flex gap-4 sm:gap-6 text-dark uppercase items-center">
-		<i class="bi bi-list"></i>
+		<svg width="36" height="16" viewBox="0 0 46 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 3H46" stroke="#BC5C28" stroke-width="4" />
+			<path d="M0 18H46" stroke="#BC5C28" stroke-width="4" />
+			<path d="M0 33H46" stroke="#BC5C28" stroke-width="4" />
+		</svg>
+
 		<a
 			class="hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
 			href="/Menu"
 			rel="ugc"
 		>
 			Menu
+		</a>
+		<a
+			class="hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
+			href="/Services"
+			rel="ugc"
+		>
+			Services
 		</a>
 		<a
 			class="hover:underline underline-offset-4 hover:scale-105 hover:font-extrabold hidden md:block"
@@ -42,8 +53,8 @@
 	</a>
 
 	<section class="flex">
-		<button class="bg-action text-xs md:text-sm px-5 py-2">Order Online</button>
-		<label class="cursor-pointer grid place-items-center">
+		<button class="bg-action text-xs md:text-sm px-5 py-2 ff-serif">Order Online</button>
+		<!-- <label class="cursor-pointer grid place-items-center">
 			<input
 				type="checkbox"
 				value="synthwave"
@@ -77,7 +88,7 @@
 				stroke-linejoin="round"
 				><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg
 			>
-		</label>
+		</label> -->
 	</section>
 </header>
 <slot />
@@ -167,9 +178,10 @@
 	}
 
 	a {
-		font-family: 'Comfortaa Variable', sans-serif;
+		font-family: 'Hammersmith One', sans-serif;
 		font-size: 13px;
 		line-height: 24px;
+		color: #808080;
 	}
 
 	button {
