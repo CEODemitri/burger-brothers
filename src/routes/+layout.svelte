@@ -4,7 +4,7 @@
 	import '@fontsource/finger-paint';
 </script>
 
-<div class="navbar bg-[#000] m-auto">
+<div class="navbar bg-[#000] m-auto px-8">
 	<div class="navbar-start">
 		<nav class="flex gap-4 sm:gap-6 text-dark uppercase items-center">
 			<svg
@@ -82,7 +82,7 @@
 </div>
 <slot />
 
-<footer class="footer bg-dark text-neutral-content p-10">
+<footer class="footer bg-dark text-neutral-content p-10 m-auto">
 	<aside>
 		<img alt="small logo" src="../logos/noBg.png" class="w-36" />
 		<p>
