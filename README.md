@@ -21,6 +21,14 @@ shop: diff vibe .. nav, popular, all products, categories
 
 # 7 24
 
-1. Update Fonts, Design System
-2. Crispier Ui, seems flat right now.
-3. More Energy
+- [ x ] Update Fonts, Design System
+- [ x ] Crispier Ui, seems flat right now.
+- [ x ] More Energy
+
+Completed 7 29
+
+# 7 29
+
+- [ ] Add more Details.
+- [ ] Refractor
+- [ ] Animations

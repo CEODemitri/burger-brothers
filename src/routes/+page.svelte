@@ -5,6 +5,31 @@
 	import SectionHeader from '../components/SectionHeader.svelte';
 
 	// starter items
+	const flower = {
+		src: '/specials/appetizers/flower.png',
+		price: 22.99,
+		name: 'Cauliflower',
+		description:
+			'You smell me. Quinoa from the untapped valleys you and I never seen, across this earth. Finest ingredients.'
+	};
+
+	const pickles = {
+		src: '/specials/appetizers/pickles.png',
+		price: 14.99,
+		name: 'Fried Pickles',
+		description:
+			'You see me. Chops raised on our farms. If you know good food, what are we talking about, order now.'
+	};
+
+	const spinachDip = {
+		src: '/specials/appetizers/spinachDip.png',
+		price: 30.99,
+		name: 'Spinach Dip',
+		description:
+			'You feel me. All natural eggs, from the land, paired elegantly with fresh cut hashbrowns, twice.'
+	};
+
+	// entree items
 	const melt = {
 		src: '/specials/grill-quinoa.png',
 		price: 85.99,
@@ -27,17 +52,6 @@
 		name: 'Break Fast',
 		description:
 			'You feel me. All natural eggs, from the land, paired elegantly with fresh cut hashbrowns, twice.'
-	};
-
-	// entree items
-	const entree1 = {
-		/* ... */
-	};
-	const entree2 = {
-		/* ... */
-	};
-	const entree3 = {
-		/* ... */
 	};
 
 	// dessert items
@@ -63,10 +77,10 @@
 	};
 
 	const tabs = [
-		{ name: 'Starters', path: '#starters', content: [melt, pork, breakfast] },
-		{ name: 'Entrees', path: '#entrees', content: [entree1, entree2, entree3] },
-		{ name: 'Drinks', path: '#drinks', content: [drink1, drink2, drink3] },
-		{ name: 'Desserts', path: '#desserts', content: [dessert1, dessert2, dessert3] }
+		{ name: 'Starters', path: '#starters', content: [flower, pickles, spinachDip] },
+		{ name: 'Entrees', path: '#entrees', content: [melt, pork, breakfast] },
+		{ name: 'Drinks', path: '#drinks', content: [flower, pickles, spinachDip] },
+		{ name: 'Desserts', path: '#desserts', content: [melt, pork, breakfast] }
 	];
 
 	let selectedTab = tabs[0]; // default to the first tab
@@ -114,78 +128,76 @@
 </script>
 
 <div class="home overflow-hidden">
-	<div class="hero-section text-white relative px-4">
+	<div class="hero-section text-white px-4 relative">
 		<h1
 			class="text-6xl md:text-8xl lg:text-[9rem] leading-[1em] ff-serif text-center uppercase pt-8 text"
 		>
 			<span class="ff-sans">Burger </span>Brothers
 		</h1>
-		<p class="w-[70%] mb-12 lg:w-[550px] text-[0.9rem] ff-body p-4 lg:py-12">
+		<p class="w-[70%] lg:w-[550px] text-[0.9rem] ff-body p-4 lg:py-12">
 			Discover a burger experience like no other at Burger Brothers. We are more than just a
 			restaurant; we are a celebration of all things delicious, juicy, and perfectly crafted between
 			two buns. From our hand-selected ingredients to our passion for flavor, every burger tells a
 			story of quality and satisfaction.
 		</p>
 
-		<img
-			src="../HeroB.png"
-			alt=""
-			class="absolute top-36 lg:top-0 left-[45%] w-[25em] lg:w-[37em] z-50"
-		/>
-
-		<!-- call to action space -->
-		<section
-			class="box max-w-screen-md max-h-44 fs-300 flex justify-start items-center w-max-content md:space-x-8"
+		<article
+			class="flex absolute top-0 flex-row-reverse items-center justify-end lg:ml-24 lg:mt-10 md:mt-36 mt-44 -ml-24"
 		>
-			<p class="links">
-				<!-- icon -->
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="currentColor"
-					class="bi bi-people w-70 h-10"
-					viewBox="0 0 16 16"
-				>
-					<path
-						d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
-					/>
-				</svg>
-				<span> Catering </span>
-			</p>
-			<p class="links">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="currentColor"
-					class="bi bi-receipt-cutoff w-70 h-10"
-					viewBox="0 0 16 16"
-				>
-					<path
-						d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5M11.5 4a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"
-					/>
-					<path
-						d="M2.354.646a.5.5 0 0 0-.801.13l-.5 1A.5.5 0 0 0 1 2v13H.5a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H15V2a.5.5 0 0 0-.053-.224l-.5-1a.5.5 0 0 0-.8-.13L13 1.293l-.646-.647a.5.5 0 0 0-.708 0L11 1.293l-.646-.647a.5.5 0 0 0-.708 0L9 1.293 8.354.646a.5.5 0 0 0-.708 0L7 1.293 6.354.646a.5.5 0 0 0-.708 0L5 1.293 4.354.646a.5.5 0 0 0-.708 0L3 1.293zm-.217 1.198.51.51a.5.5 0 0 0 .707 0L4 1.707l.646.647a.5.5 0 0 0 .708 0L6 1.707l.646.647a.5.5 0 0 0 .708 0L8 1.707l.646.647a.5.5 0 0 0 .708 0L10 1.707l.646.647a.5.5 0 0 0 .708 0L12 1.707l.646.647a.5.5 0 0 0 .708 0l.509-.51.137.274V15H2V2.118z"
-					/>
-				</svg>
-				<span> Order Online </span>
-			</p>
-			<p class="links">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="currentColor"
-					class="bi bi-pin-map w-70 h-10"
-					viewBox="0 0 16 16"
-				>
-					<path
-						fill-rule="evenodd"
-						d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"
-					/>
-					<path
-						fill-rule="evenodd"
-						d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"
-					/>
-				</svg>
-				<span> Find Location </span>
-			</p>
-		</section>
+			<img src="../HeroB.png" alt="" class="w-[25em] lg:w-[37em] z-10" />
+
+			<!-- call to action space -->
+			<section class="box fs-300 flex items-center md:space-x-8 h-fit -z-1 mt-24">
+				<p class="links">
+					<!-- icon -->
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="currentColor"
+						class="bi bi-people w-[26px] lg:w-70 h-10"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
+						/>
+					</svg>
+					<span> Catering </span>
+				</p>
+				<p class="links">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="currentColor"
+						class="bi bi-receipt-cutoff w-[26px] lg:w-70 h-10"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5M11.5 4a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"
+						/>
+						<path
+							d="M2.354.646a.5.5 0 0 0-.801.13l-.5 1A.5.5 0 0 0 1 2v13H.5a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H15V2a.5.5 0 0 0-.053-.224l-.5-1a.5.5 0 0 0-.8-.13L13 1.293l-.646-.647a.5.5 0 0 0-.708 0L11 1.293l-.646-.647a.5.5 0 0 0-.708 0L9 1.293 8.354.646a.5.5 0 0 0-.708 0L7 1.293 6.354.646a.5.5 0 0 0-.708 0L5 1.293 4.354.646a.5.5 0 0 0-.708 0L3 1.293zm-.217 1.198.51.51a.5.5 0 0 0 .707 0L4 1.707l.646.647a.5.5 0 0 0 .708 0L6 1.707l.646.647a.5.5 0 0 0 .708 0L8 1.707l.646.647a.5.5 0 0 0 .708 0L10 1.707l.646.647a.5.5 0 0 0 .708 0L12 1.707l.646.647a.5.5 0 0 0 .708 0l.509-.51.137.274V15H2V2.118z"
+						/>
+					</svg>
+					<span> Order Online </span>
+				</p>
+				<p class="links">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="currentColor"
+						class="bi bi-pin-map w-[26px] lg:w-70 h-10"
+						viewBox="0 0 16 16"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"
+						/>
+						<path
+							fill-rule="evenodd"
+							d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"
+						/>
+					</svg>
+					<span> Find Location </span>
+				</p>
+			</section>
+		</article>
 	</div>
 
 	<!-- popular menu -->
@@ -305,10 +317,9 @@
 	}
 
 	.box {
-		width: 40vw;
 		min-width: fit-content;
-		padding: 0 36px;
-		height: 14vh;
+		padding: 10px 36px;
+		padding-right: 8em;
 		background-color: #232135;
 		position: relative;
 		left: 15vw;
@@ -331,8 +342,7 @@
 		}
 
 		.box {
-			padding: 25px;
-			left: 7%;
+			padding-right: 2em;
 		}
 	}
 
