@@ -1,7 +1,7 @@
 <script>
-	// Supports weights 300-700
+	import { onMount } from 'svelte';
 	import Cards from '../components/Cards/Cards.svelte';
-	import Review from '../components/Review.svelte';
+	import Reviewers from '../components/Reviewers.svelte';
 	import SectionHeader from '../components/SectionHeader.svelte';
 
 	// starter items
@@ -94,6 +94,23 @@
 		title: 'Who Are We?',
 		description: `We support local farmers and source sustainable ingredients whenever possible. Our commitment to quality extends from farm to table, ensuring you enjoy food that's good for you and the planet.`
 	};
+
+	let qualities = [
+		'Exceptional Service',
+		'High-Quality Ingredients',
+		'Unique and Delicious Menu',
+		'Welcoming Atmosphere',
+		'Clean and Comfortable Environment',
+		'Excellent Value for Money'
+	];
+
+	onMount(() => {
+		// Randomly apply the fade-in animation to each item
+		document.querySelectorAll('.fade-in-out').forEach((element, index) => {
+			let delay = Math.random() * 10; // Random delay between 0 and 10 seconds
+			element.style.animationDelay = `${delay}s`;
+		});
+	});
 </script>
 
 <div class="home overflow-hidden">
@@ -195,29 +212,78 @@
 	<!-- review section -->
 	<SectionHeader {...reviews} />
 	<div class="flex justify-around flex-wrap p-5">
-		<Review
-			reviewer="Emily T."
-			comment="'Delicious burgers with top-notch ingredients! My favorite spot for a juicy, satisfying meal.'"
-		/>
-		<Review
-			reviewer="Michael S."
-			comment="'The variety of flavors is amazing. Every burger is a masterpiece!'"
-		/>
-		<Review
-			reviewer="Florida E."
-			comment="'Great atmosphere and friendly service. Perfect place to enjoy a burger with friends.'"
-		/>
+		<Reviewers />
 	</div>
 
 	<!-- about section -->
-	<SectionHeader {...about} />
-	<p class="text-black w-[25ch] md:w-[75ch] m-auto text-md p-3">
-		Located conveniently in the heart of Metropolis, Burger Brothers invites you to indulge in the
-		ultimate burger experience. Whether you dine in, take out, or order online, our commitment to
-		exceptional food and service ensures every visit is a treat. Ready to embark on a burger journey
-		like no other? Join us at Burger Brothers and taste the difference quality makes. Your taste
-		buds will thank you.
-	</p>
+	<article class="bg-orange-900/10">
+		<SectionHeader {...about} />
+		<ul class="flex justify-center mt-16">
+			{#each qualities as quality}
+				<li>
+					<h2 class="fade-in-out font-bold ff-serif text-xs">{quality}</h2>
+				</li>
+			{/each}
+		</ul>
+
+		<section class="w-full py-8 md:py-16 lg:py-24">
+			<div
+				class="container grid items-center justify-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-16"
+			>
+				<div class="space-y-4">
+					<p
+						class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+					>
+						At our restaurant, we take pride in our rich history and commitment to delivering an
+						exceptional dining experience. Founded in 1985, we've been serving the community with
+						our unique blend of traditional and innovative cuisine, all while fostering a warm and
+						inviting atmosphere.
+					</p>
+					<p
+						class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+					>
+						Our philosophy is simple: use the freshest, locally-sourced ingredients to create dishes
+						that delight the senses and nourish the soul. From our signature dishes to our seasonal
+						specials, every plate is crafted with passion and attention to detail.
+					</p>
+				</div>
+				<div class="grid grid-cols-2 gap-4">
+					<img
+						src="../landing/heroImg.png"
+						width="300"
+						height="300"
+						alt="Beautiful Burgers"
+						class="rounded-lg object-cover"
+						style="aspect-ratio: 300 / 300; object-fit: cover;"
+					/>
+					<img
+						src="../landing/staunt.png"
+						width="300"
+						height="300"
+						alt="Restaurant Atmosphere"
+						class="rounded-lg object-cover"
+						style="aspect-ratio: 300 / 300; object-fit: cover;"
+					/>
+					<img
+						src="../landing/farming.png"
+						width="300"
+						height="300"
+						alt="Farmers"
+						class="rounded-lg object-cover"
+						style="aspect-ratio: 300 / 300; object-fit: cover;"
+					/>
+					<img
+						src="../landing/cheese.png"
+						width="300"
+						height="300"
+						alt="Restaurant Team"
+						class="rounded-lg object-cover"
+						style="aspect-ratio: 300 / 300; object-fit: cover;"
+					/>
+				</div>
+			</div>
+		</section>
+	</article>
 </div>
 
 <style>
@@ -267,6 +333,22 @@
 		.box {
 			padding: 25px;
 			left: 7%;
+		}
+	}
+
+	.fade-in-out {
+		animation: fadeInOut 15s infinite;
+	}
+
+	@keyframes fadeInOut {
+		0% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
 		}
 	}
 </style>
