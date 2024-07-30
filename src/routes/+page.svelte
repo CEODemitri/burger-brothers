@@ -141,13 +141,9 @@
 			story of quality and satisfaction.
 		</p>
 
-		<article
-			class="flex absolute top-0 flex-row-reverse items-center justify-end lg:ml-24 lg:mt-10 md:mt-36 mt-44 -ml-24"
-		>
-			<img src="../HeroB.png" alt="" class="w-[25em] lg:w-[37em] z-10" />
-
+		<article class="w-screen absolute top-0 grid grid-cols-12 gap-72">
 			<!-- call to action space -->
-			<section class="box fs-300 flex items-center md:space-x-8 h-fit -z-1 mt-24">
+			<section class="box fs-300 flex items-center md:space-x-8 h-fit -z-1 col-span-4 mt-[40vh]">
 				<p class="links">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -197,6 +193,7 @@
 					<span> Catering </span>
 				</p>
 			</section>
+			<img src="../HeroB.png" alt="" class="w-[25em] lg:w-[37em] z-10 col-span-8" />
 		</article>
 	</div>
 
