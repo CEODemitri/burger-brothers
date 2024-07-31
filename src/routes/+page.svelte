@@ -134,7 +134,7 @@
 		>
 			<span class="ff-sans">Burger </span>Brothers
 		</h1>
-		<p class="w-[70%] lg:w-[550px] text-[0.9rem] ff-body p-4 lg:py-12">
+		<p class="w-[75%] md:w-[550px] text-[0.9rem] ff-body p-4 lg:py-12">
 			Discover a burger experience like no other at Burger Brothers. We are more than just a
 			restaurant; we are a celebration of all things delicious, juicy, and perfectly crafted between
 			two buns. From our hand-selected ingredients to our passion for flavor, every burger tells a
@@ -143,7 +143,9 @@
 
 		<article class="w-screen absolute top-0 grid grid-cols-12 gap-72">
 			<!-- call to action space -->
-			<section class="box fs-300 flex items-center md:space-x-8 h-fit -z-1 col-span-4 mt-[40vh]">
+			<section
+				class="hidden box fs-300 md:flex items-center md:space-x-8 h-fit -z-1 col-span-4 mt-[40vh]"
+			>
 				<p class="links">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +195,11 @@
 					<span> Catering </span>
 				</p>
 			</section>
-			<img src="../HeroB.png" alt="" class="w-[25em] lg:w-[37em] z-10 col-span-8" />
+			<img
+				src="../HeroB.png"
+				alt=""
+				class="w-[37em] z-10 mt-60 md:mt-40 lg:mt-0 col-span-10 ml-36 md:ml-24 lg:ml-0 sm:col-span-8"
+			/>
 		</article>
 	</div>
 
@@ -225,7 +231,7 @@
 	</div>
 
 	<!-- about section -->
-	<article class="bg-orange-900/10">
+	<article class="bg-orange-900/10 h-fit py-10">
 		<SectionHeader {...about} />
 		<ul class="flex justify-center mt-16">
 			{#each qualities as quality}
@@ -239,18 +245,14 @@
 			<div
 				class="container grid items-center justify-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-16"
 			>
-				<div class="space-y-4">
-					<p
-						class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-					>
+				<div class="space-y-4 text-[0.8em]/loose">
+					<p class="">
 						At our restaurant, we take pride in our rich history and commitment to delivering an
 						exceptional dining experience. Founded in 1985, we've been serving the community with
 						our unique blend of traditional and innovative cuisine, all while fostering a warm and
 						inviting atmosphere.
 					</p>
-					<p
-						class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-					>
+					<p>
 						Our philosophy is simple: use the freshest, locally-sourced ingredients to create dishes
 						that delight the senses and nourish the soul. From our signature dishes to our seasonal
 						specials, every plate is crafted with passion and attention to detail.
@@ -335,7 +337,7 @@
 
 	@media (max-width: 767px) {
 		.home {
-			height: 4400px;
+			height: fit-content;
 		}
 
 		.box {

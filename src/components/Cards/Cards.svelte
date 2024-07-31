@@ -5,7 +5,7 @@
 	export let description;
 </script>
 
-<div class="w-72 text-[#232135] relative mb-20">
+<div class="w-72 text-[#232135] relative mb-32">
 	<img {src} alt={name} srcset="" class="rounded-md" />
 	<div class="info h-32 mb-6 p-2 bg-[#D6CFA9] rounded-md w-[250px] absolute top-64 left-5">
 		<h2 class="text-xl ff-serif">{name}</h2>

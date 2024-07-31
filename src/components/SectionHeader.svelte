@@ -15,10 +15,11 @@
 <style>
 	p.pill {
 		background-color: hsl(250, 27%, 17%);
-		color: #fff;
-		width: 200px;
-		padding: 5px;
+		color: hsl(39, 100%, 90%);
+		width: 9em;
+		padding: 4px;
 		border-radius: 15px;
 		margin: auto;
+		font-size: 0.9rem;
 	}
 </style>
