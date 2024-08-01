@@ -21,7 +21,7 @@
 			ratings: 5
 		},
 		{
-			name: 'Emily Martinez',
+			name: 'Emmel Martinez',
 			image: '../review/man3.jpg',
 			text: "I'm really impressed with this product. It's well-made,\n easy to use, and has exceeded my expectations. I would\n definitely recommend it to anyone looking for a reliable and\n high-quality solution.",
 			ratings: 3
@@ -49,7 +49,13 @@
 
 	function updateCarousel() {
 		if (carousel) {
-			const slideWidth = carousel.offsetWidth / 3; // Display 3 slides at a time
+			// Calculate the number of slides to show based on the width of the carousel
+			const slidesToShow = Math.floor(carousel.offsetWidth / 300); // Assuming 300px as the default width for each slide; adjust as necessary
+			const slideWidth = carousel.offsetWidth / slidesToShow;
+			const maxIndex = Math.max(slides.length - slidesToShow, 0); // Ensure currentIndex doesn't exceed the maximum possible
+
+			currentIndex = Math.min(currentIndex, maxIndex); // Adjust currentIndex to ensure it is within bounds
+
 			const offset = -currentIndex * slideWidth;
 			carousel.style.transform = `translateX(${offset}px)`;
 		}
@@ -69,7 +75,7 @@
 		{#each slides as slide}
 			<div class="carousel__slide">
 				<article
-					class="flex flex-col mx-4 border border-slate-600 rounded-md px-8 py-4 min-w-fit relative"
+					class="flex flex-col mx-4 border border-slate-600/70 rounded-md px-8 py-4 min-w-fit relative bg-slate-800/40"
 				>
 					<img src={slide.image} alt={slide.name} class="rounded-full w-32 h-32 p" />
 					<div class="carousel__text">
@@ -113,13 +119,6 @@
 		flex: 1 0 100%; /* Adjust for 1 slide visible by default */
 		box-sizing: border-box;
 		padding: 0 0.5rem; /* Adds padding around each slide */
-	}
-
-	.carousel__image {
-		width: 100%;
-		border-radius: 8px;
-		margin-bottom: 0.5rem;
-		object-fit: cover; /* Ensures image covers the container without distortion */
 	}
 
 	.carousel__text {

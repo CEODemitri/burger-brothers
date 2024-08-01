@@ -3,6 +3,7 @@
 	import Cards from '../components/Cards/Cards.svelte';
 	import Reviewers from '../components/Reviewers.svelte';
 	import SectionHeader from '../components/SectionHeader.svelte';
+	import Carousel from '../components/Carousel.svelte';
 
 	// starter items
 	const flower = {
@@ -128,7 +129,8 @@
 </script>
 
 <div class="home overflow-hidden">
-	<div class="hero-section text-white px-4 relative">
+	<!-- hero  -->
+	<div class="hero-section text-white px-4">
 		<h1
 			class="text-5xl md:text-8xl lg:text-[9rem] leading-[1em] ff-serif text-center uppercase pt-8 text"
 		>
@@ -141,10 +143,28 @@
 			story of quality and satisfaction.
 		</p>
 
-		<article class="flex justify-center">
+		<article
+			class="flex lg:-top-60 -top-12 flex-row-reverse items-center justify-end lg:ml-24 ml-24 relative"
+		>
+			<img src="../HeroB.png" alt="" class="w-[18em] md:w-[37em] z-10 mt-4" />
+
 			<!-- call to action space -->
-			<section class="flex sm:flex-row text-sm py-4 bg-indigo-900/30 px-4 my-4 rounded-md">
+			<section class="box fs-300 items-center md:space-x-8 h-fit -z-1 flex flex-col sm:flex-row">
 				<p class="links">
+					<!-- icon -->
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="currentColor"
+						class="bi bi-people w-[26px] lg:w-70 h-10"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
+						/>
+					</svg>
+					<span> Catering </span>
+				</p>
+				<p class="links text-sm">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="currentColor"
@@ -168,41 +188,20 @@
 						viewBox="0 0 16 16"
 					>
 						<path
-							fill-rule="evenodd"
 							d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"
 						/>
 						<path
-							fill-rule="evenodd"
 							d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"
 						/>
 					</svg>
 					<span> Find Location </span>
 				</p>
-				<p class="links">
-					<!-- icon -->
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="currentColor"
-						class="bi bi-people w-[26px] lg:w-70 h-10"
-						viewBox="0 0 16 16"
-					>
-						<path
-							d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
-						/>
-					</svg>
-					<span> Catering </span>
-				</p>
 			</section>
-			<img
-				src="../HeroB.png"
-				alt="juicy burger"
-				class="p-0 m-0 box-content w-[600px] hidden sm:inline-block absolute"
-			/>
 		</article>
 	</div>
 
 	<!-- popular menu -->
-	<div>
+	<div class="flex flex-col">
 		<SectionHeader {...popular} />
 		<div class="text-dark">
 			<article class="flex justify-center ff-sans m-5 fs-400 flex-wrap">
@@ -222,7 +221,10 @@
 				<Cards {...item} />
 			{/each}
 		</article>
-		<button class="m-auto text-center"><a href="/" class="">View More</a></button>
+		<button
+			class="text-sm bg-blue-900 p-2 rounded-md w-36 self-center hover:bg-blue-400 hover:scale-110 duration-500"
+			><a href="/Menu" class="">View More</a></button
+		>
 		<hr class="my-20 w-2/3 m-auto" />
 	</div>
 
@@ -233,12 +235,12 @@
 	</div>
 
 	<!-- about section -->
-	<article class="bg-orange-900/10 h-fit py-10">
+	<article class="bg-orange-900/10 h-fit py-4">
 		<SectionHeader {...about} />
-		<ul class="flex justify-center mt-16 items-center m-auto">
+		<ul class="flex justify-center mt-16 items-center space-around flex-wrap px-1">
 			{#each qualities as quality}
 				<li>
-					<h2 class="fade-in-out font-bold ff-serif text-xs w-11/12">{quality}</h2>
+					<h2 class="fade-in-out font-bold ff-serif text-xs text-yellow-900">{quality}</h2>
 				</li>
 			{/each}
 		</ul>
@@ -260,7 +262,7 @@
 						specials, every plate is crafted with passion and attention to detail.
 					</p>
 				</div>
-				<div class="grid grid-cols-2 gap-4">
+				<div class="grid sm:grid-cols-2 gap-4 mx-auto">
 					<img
 						src="../landing/heroImg.png"
 						width="300"
@@ -308,7 +310,7 @@
 	}
 
 	.hero-section {
-		height: 70vh;
+		max-height: 750px;
 		background-color: #000000;
 	}
 
@@ -318,6 +320,7 @@
 	}
 
 	.links {
+		width: 7em;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -332,7 +335,14 @@
 		}
 
 		.hero-section {
-			height: fit-content;
+			height: 80vh;
+		}
+
+		.links {
+			width: fit;
+			height: 4em;
+			font-size: 0.6rem;
+			flex-wrap: wrap;
 		}
 	}
 
