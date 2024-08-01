@@ -4,8 +4,8 @@
 	export let description;
 </script>
 
-<div class="text-center text-white flex flex-col mb-6 mt-20">
-	<h1 class="text-slate-300 ff-body letter-spacing-3 text-[32px] md:text-[64px] ff-serif font-bold">
+<div class="text-center text-white flex flex-col mb-6 mt-24">
+	<h1 class="text-slate-300 ff-sans letter-spacing-3 text-[32px] md:text-[64px] ff-serif font-bold">
 		{title}
 	</h1>
 	<p class="pill p-5 ff-serif">{pill}</p>

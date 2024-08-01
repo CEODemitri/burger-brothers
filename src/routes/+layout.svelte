@@ -52,7 +52,7 @@
 	<div class="navbar-center">
 		<a class="flex items-center justify-center" href="/" rel="ugc">
 			<figure>
-				<img src="../logos/noBg.png" alt="" class="w-16" />
+				<img src="../logos/noBg.png" alt="" class="w-16 ml-40 md:ml-0" />
 				<figcaption>
 					<h1 class="text-2xl font-bold text-gray-900 sr-only">Burger Brothers Logo</h1>
 				</figcaption>
@@ -60,7 +60,7 @@
 			<span class="sr-only">Burger Brothers</span>
 		</a>
 	</div>
-	<div class="navbar-end">
+	<div class="hidden md:flex navbar-end">
 		<button class="btn btn-ghost btn-circle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@
 	<nav>
 		<h6 class="footer-title">Social</h6>
 		<div class="grid grid-flow-col gap-4">
-			<a>
+			<a href="/">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
@@ -107,7 +107,7 @@
 					></path>
 				</svg>
 			</a>
-			<a>
+			<a href="/">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"

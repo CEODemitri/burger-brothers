@@ -130,7 +130,7 @@
 <div class="home overflow-hidden">
 	<div class="hero-section text-white px-4 relative">
 		<h1
-			class="text-6xl md:text-8xl lg:text-[9rem] leading-[1em] ff-serif text-center uppercase pt-8 text"
+			class="text-5xl md:text-8xl lg:text-[9rem] leading-[1em] ff-serif text-center uppercase pt-8 text"
 		>
 			<span class="ff-sans">Burger </span>Brothers
 		</h1>
@@ -141,11 +141,9 @@
 			story of quality and satisfaction.
 		</p>
 
-		<article class="w-screen absolute top-0 grid grid-cols-12 gap-72">
+		<article class="flex justify-center">
 			<!-- call to action space -->
-			<section
-				class="hidden box fs-300 md:flex items-center md:space-x-8 h-fit -z-1 col-span-4 mt-[40vh]"
-			>
+			<section class="flex sm:flex-row text-sm py-4 bg-indigo-900/30 px-4 my-4 rounded-md">
 				<p class="links">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -197,32 +195,36 @@
 			</section>
 			<img
 				src="../HeroB.png"
-				alt=""
-				class="w-[37em] z-10 mt-60 md:mt-40 lg:mt-0 col-span-10 ml-36 md:ml-24 lg:ml-0 sm:col-span-8"
+				alt="juicy burger"
+				class="p-0 m-0 box-content w-[600px] hidden sm:inline-block absolute"
 			/>
 		</article>
 	</div>
 
 	<!-- popular menu -->
-	<SectionHeader {...popular} />
-	<div class="text-dark">
-		<article class="flex justify-center ff-sans m-5 fs-400 flex-wrap">
-			{#each tabs as tab}
-				<a
-					href={tab.path}
-					on:click|preventDefault={() => selectTab(tab)}
-					class="px-6 py-1 rounded-md mx-3 text-slate-500 hover:bg-orange-600 hover:text-white"
-					>{tab.name}</a
-				>
+	<div>
+		<SectionHeader {...popular} />
+		<div class="text-dark">
+			<article class="flex justify-center ff-sans m-5 fs-400 flex-wrap">
+				{#each tabs as tab}
+					<a
+						href={tab.path}
+						on:click|preventDefault={() => selectTab(tab)}
+						class="px-6 py-1 rounded-md mx-3 text-slate-500 hover:bg-orange-600 hover:text-white"
+						>{tab.name}</a
+					>
+				{/each}
+			</article>
+		</div>
+
+		<article class="p-5 flex flex-wrap justify-center">
+			{#each selectedTab.content as item}
+				<Cards {...item} />
 			{/each}
 		</article>
+		<button class="m-auto text-center"><a href="/" class="">View More</a></button>
+		<hr class="my-20 w-2/3 m-auto" />
 	</div>
-
-	<article class="p-5 flex flex-wrap justify-center">
-		{#each selectedTab.content as item}
-			<Cards {...item} />
-		{/each}
-	</article>
 
 	<!-- review section -->
 	<SectionHeader {...reviews} />
@@ -233,10 +235,10 @@
 	<!-- about section -->
 	<article class="bg-orange-900/10 h-fit py-10">
 		<SectionHeader {...about} />
-		<ul class="flex justify-center mt-16">
+		<ul class="flex justify-center mt-16 items-center m-auto">
 			{#each qualities as quality}
 				<li>
-					<h2 class="fade-in-out font-bold ff-serif text-xs">{quality}</h2>
+					<h2 class="fade-in-out font-bold ff-serif text-xs w-11/12">{quality}</h2>
 				</li>
 			{/each}
 		</ul>
@@ -306,24 +308,13 @@
 	}
 
 	.hero-section {
-		height: 600px;
+		height: 70vh;
 		background-color: #000000;
 	}
 
 	.text {
 		width: 100%;
-		font-size: clamp(5rem, 10vw, 9rem);
-	}
-
-	.box {
-		min-width: fit-content;
-		padding: 10px 36px;
-		padding-right: 8em;
-		background-color: #232135;
-		position: relative;
-		left: 15vw;
-		border-radius: 30px 0 30px 0;
-		text-align: center;
+		font-size: clamp(4rem, 10vw, 9rem);
 	}
 
 	.links {
@@ -340,8 +331,8 @@
 			height: fit-content;
 		}
 
-		.box {
-			padding-right: 2em;
+		.hero-section {
+			height: fit-content;
 		}
 	}
 

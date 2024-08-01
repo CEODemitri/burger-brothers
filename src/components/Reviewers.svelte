@@ -68,12 +68,16 @@
 	<div class="carousel__slides" bind:this={carousel}>
 		{#each slides as slide}
 			<div class="carousel__slide">
-				<article class="flex mx-4 border border-slate-600 rounded-md px-8 py-4 min-w-fit">
+				<article
+					class="flex flex-col mx-4 border border-slate-600 rounded-md px-8 py-4 min-w-fit relative"
+				>
 					<img src={slide.image} alt={slide.name} class="rounded-full w-32 h-32 p" />
 					<div class="carousel__text">
 						<h2 class="fs-300 ff-serif text-center text-orange-400">{slide.name}</h2>
 						<p class="text-sm">{slide.text}</p>
-						<p>{slide.ratings}</p>
+						<p class="absolute top-4 left-60 sm:left-[16rem] text-blue-300">
+							{slide.ratings} stars
+						</p>
 					</div>
 				</article>
 			</div>
