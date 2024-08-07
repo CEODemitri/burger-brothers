@@ -32,3 +32,7 @@ Completed 7 29
 - [x] Add more Details.
 - [x] Refractor
 - [x] Animations
+
+# 8 06
+
+- [ ] Fumble: Missing requirements. See Design File.

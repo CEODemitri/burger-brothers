@@ -71,62 +71,19 @@
 	];
 </script>
 
-<main class="flex-1 w-full bg-light">
-	<div class="navbar bg-base-100">
-		<div class="flex-1">
-			<a class="btn btn-ghost text-xl" href="/">Burger Brothers</a>
-		</div>
-		<div class="flex-none">
-			<ul class="menu menu-horizontal px-1">
-				<li><a>Drinks</a></li>
-				<li>
-					<details>
-						<summary>Appetizers</summary>
-						<ul class="bg-base-100 rounded-t-none p-2">
-							<li><a>Sharing</a></li>
-							<li><a>Chill</a></li>
-						</ul>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>Entrees</summary>
-						<ul class="bg-base-100 rounded-t-none p-2">
-							<li><a>Link 1</a></li>
-							<li><a>Link 2</a></li>
-						</ul>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>Feasts</summary>
-						<ul class="bg-base-100 rounded-t-none p-2">
-							<li><a>Link 1</a></li>
-							<li><a>Link 2</a></li>
-						</ul>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>Desserts</summary>
-						<ul class="bg-base-100 rounded-t-none p-2">
-							<li><a>Link 1</a></li>
-							<li><a>Link 2</a></li>
-						</ul>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>Seniors</summary>
-						<ul class="bg-base-100 rounded-t-none p-2">
-							<li><a>Link 1</a></li>
-							<li><a>Link 2</a></li>
-						</ul>
-					</details>
-				</li>
-			</ul>
-		</div>
+<main class="flex-1 w-full bg-[#000]">
+	<div class="navbar">
+		<ul class="menu menu-horizontal px-1 flex flex-col">
+			<li><a>Drinks</a></li>
+			<li><a>Appetizers</a></li>
+			<li><a>Entrees</a></li>
+			<li><a>Feasts</a></li>
+			<li><a>Desserts</a></li>
+			<li><a>Seniors</a></li>
+		</ul>
 	</div>
+
+	<div></div>
 </main>
 
 <style>
