@@ -68,19 +68,28 @@
 
 	// drink items
 	const drink1 = {
-		/* ... */
+		src: '/specials/drinks/blueberrySlush.png',
+		price: 5.99,
+		name: 'Blueberry Slush',
+		description: 'Big taste of blueberries from the gardens of Oz'
 	};
 	const drink2 = {
-		/* ... */
+		src: '/specials/drinks/mangoTea.png',
+		price: 5.99,
+		name: 'Mango Sweet Tea',
+		description: 'Big taste of mangos from the gardens of Oz'
 	};
 	const drink3 = {
-		/* ... */
+		src: '/specials/drinks/sLemonadeSlush.png',
+		price: 5.99,
+		name: 'Strawberry Slush',
+		description: 'Big taste of blueberries from the gardens of Oz'
 	};
 
 	const tabs = [
 		{ name: 'Starters', path: '#starters', content: [flower, pickles, spinachDip] },
 		{ name: 'Entrees', path: '#entrees', content: [melt, pork, breakfast] },
-		{ name: 'Drinks', path: '#drinks', content: [flower, pickles, spinachDip] },
+		{ name: 'Drinks', path: '#drinks', content: [drink1, drink2, drink3] },
 		{ name: 'Desserts', path: '#desserts', content: [melt, pork, breakfast] }
 	];
 
