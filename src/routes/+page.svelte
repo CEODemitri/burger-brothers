@@ -57,13 +57,22 @@
 
 	// dessert items
 	const dessert1 = {
-		/* ... */
+		src: '/specials/desserts/roseCheeseCake.png',
+		price: 7.99,
+		name: 'RoseCake',
+		description: 'Edible roses paired perfectly with lush cheesecake baked fresh every morning.'
 	};
 	const dessert2 = {
-		/* ... */
+		src: '/specials/desserts/chocolateGold.png',
+		price: 18.99,
+		name: 'Gold Chocolate',
+		description: 'I dare you.'
 	};
 	const dessert3 = {
-		/* ... */
+		src: '/specials/desserts/cashewCream.png',
+		price: 10.99,
+		name: 'Cashew Ice Cream',
+		description: 'Tastyically fresh ice cream. Brilliance in every bite.'
 	};
 
 	// drink items
@@ -71,19 +80,20 @@
 		src: '/specials/drinks/blueberrySlush.png',
 		price: 5.99,
 		name: 'Blueberry Slush',
-		description: 'Big taste of blueberries from the gardens of Oz'
+		description: 'Big taste of blueberries from the gardens of Oz.'
 	};
 	const drink2 = {
 		src: '/specials/drinks/mangoTea.png',
 		price: 5.99,
 		name: 'Mango Sweet Tea',
-		description: 'Big taste of mangos from the gardens of Oz'
+		description: 'Big taste of mangos from the Giants of Peru.'
 	};
 	const drink3 = {
 		src: '/specials/drinks/sLemonadeSlush.png',
 		price: 5.99,
 		name: 'Strawberry Slush',
-		description: 'Big taste of blueberries from the gardens of Oz'
+		description:
+			'Big taste of strawberries from the gardens of Athena. Cold and Sweet, oh just right'
 	};
 
 	const tabs = [
