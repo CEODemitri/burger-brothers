@@ -71,7 +71,7 @@
 	const dessert3 = {
 		src: '/specials/desserts/cashewCream.png',
 		price: 10.99,
-		name: 'Cashew Ice Cream',
+		name: 'Cashew Cream',
 		description: 'Tastyically fresh ice cream. Brilliance in every bite.'
 	};
 
@@ -100,7 +100,7 @@
 		{ name: 'Starters', path: '#starters', content: [flower, pickles, spinachDip] },
 		{ name: 'Entrees', path: '#entrees', content: [melt, pork, breakfast] },
 		{ name: 'Drinks', path: '#drinks', content: [drink1, drink2, drink3] },
-		{ name: 'Desserts', path: '#desserts', content: [melt, pork, breakfast] }
+		{ name: 'Desserts', path: '#desserts', content: [dessert1, dessert2, dessert3] }
 	];
 
 	let selectedTab = tabs[0]; // default to the first tab
