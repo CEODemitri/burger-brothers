@@ -66,7 +66,7 @@
 		src: '/specials/desserts/chocolateGold.png',
 		price: 18.99,
 		name: 'Gold Chocolate',
-		description: 'I dare you.'
+		description: 'I dare you. And say cheese with these.'
 	};
 	const dessert3 = {
 		src: '/specials/desserts/cashewCream.png',
