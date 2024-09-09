@@ -145,35 +145,43 @@
 			element.style.animationDelay = `${delay}s`;
 		});
 	});
+
+	let text =
+		'Discover a burger experience like no other at Burger Brothers. We are more than just a restaurant; we are a celebration of all things delicious, juicy, and perfectly crafted between two buns. From our hand-selected ingredients to our passion for flavor, every burger tells a story of quality and satisfaction.';
 </script>
 
 <div class="home overflow-hidden">
 	<!-- hero  -->
-	<div class="hero-section text-white px-4">
+	<div class="hero-section text-white px-4 h-fit">
 		<h1
 			class="text-5xl md:text-8xl lg:text-[9rem] leading-[1em] ff-serif text-center uppercase pt-8 text"
 		>
 			<span class="ff-sans">Burger </span>Brothers
 		</h1>
-		<p class="w-[75%] md:w-[550px] text-[0.9rem] ff-body p-4 lg:py-12">
-			Discover a burger experience like no other at Burger Brothers. We are more than just a
-			restaurant; we are a celebration of all things delicious, juicy, and perfectly crafted between
-			two buns. From our hand-selected ingredients to our passion for flavor, every burger tells a
-			story of quality and satisfaction.
+		<p
+			class="w-[75%] md:w-[550px] text-[0.9rem] ff-body p-4 bg-orange-50/5 rounded-lg text-gray-400 tracking-wider mt-4 hover-effect"
+		>
+			{#each text.split('').map((char) => ({ char })) as { char }}
+				{#if char === ' '}
+					<span>&nbsp;</span>
+				{:else}
+					<span>{char}</span>
+				{/if}
+			{/each}
 		</p>
 
 		<article
-			class="flex lg:-top-60 -top-12 flex-row-reverse items-center justify-end lg:ml-24 ml-24 relative"
+			class="flex flex-col-reverse -top-12 md:flex-row-reverse items-center justify-end lg:ml-48 mt-20 md:mt-0"
 		>
-			<img src="../HeroB.png" alt="" class="w-[18em] md:w-[37em] z-10 mt-4" />
+			<img src="../HeroB.png" alt="" class="max-w-[28em] mt-4" />
 
 			<!-- call to action space -->
-			<section class="box fs-300 items-center md:space-x-8 h-fit -z-1 flex flex-col sm:flex-row">
-				<p class="links text-sm">
+			<section class="fs-300 items-center flex flex-col sm:flex-row bg-stone-500/10 p-8 rounded-lg">
+				<p class="links text-sm hover:animate-bounce hover:cursor-pointer">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="currentColor"
-						class="bi bi-receipt-cutoff w-[26px] lg:w-70 h-10"
+						class="bi bi-receipt-cutoff w-10 h-10"
 						viewBox="0 0 16 16"
 					>
 						<path
@@ -185,11 +193,11 @@
 					</svg>
 					<span> Order Online </span>
 				</p>
-				<p class="links">
+				<p class="links hover:animate-ping hover:cursor-pointer">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="currentColor"
-						class="bi bi-pin-map w-[26px] lg:w-70 h-10"
+						class="bi bi-pin-map w-10 h-10"
 						viewBox="0 0 16 16"
 					>
 						<path
@@ -201,12 +209,12 @@
 					</svg>
 					<span> Find Location </span>
 				</p>
-				<p class="links">
+				<p class="links hover:animate-spin hover:cursor-pointer">
 					<!-- icon -->
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="currentColor"
-						class="bi bi-people w-[26px] lg:w-70 h-10"
+						class="bi bi-people w-10 h-10"
 						viewBox="0 0 16 16"
 					>
 						<path
@@ -329,8 +337,8 @@
 	}
 
 	.hero-section {
-		max-height: 750px;
 		background-color: #000000;
+		height: 80vh;
 	}
 
 	.text {
@@ -344,7 +352,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 5px;
+		gap: 1em;
 		color: cornflowerblue;
 	}
 
@@ -354,15 +362,36 @@
 		}
 
 		.hero-section {
-			height: 80vh;
+			height: fit-content;
 		}
 
 		.links {
 			width: fit;
 			height: 4em;
-			font-size: 0.6rem;
 			flex-wrap: wrap;
+			font-size: 0.8rem;
+			margin: 0 1em;
 		}
+
+		.links svg {
+			width: 2em;
+		}
+	}
+
+	.hover-effect {
+		display: inline-block;
+	}
+
+	.hover-effect span {
+		display: inline-block;
+		transition:
+			color 0.3s,
+			transform 0.3s;
+	}
+
+	.hover-effect span:hover {
+		color: #ffa500; /* Light orange color */
+		transform: scale(3); /* Increase size on hover */
 	}
 
 	.fade-in-out {
