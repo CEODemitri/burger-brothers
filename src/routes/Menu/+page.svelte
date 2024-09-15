@@ -209,7 +209,7 @@
 							Here are the items available in the {selectedCategory} category.
 						</p>
 						<!-- Display cards for the selected category -->
-						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+						<div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
 							{#each categories[selectedCategory] as item}
 								<MediumCards {item} />
 							{/each}

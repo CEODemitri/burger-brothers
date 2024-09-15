@@ -36,3 +36,8 @@ Completed 7 29
 # 8 06
 
 - [ ] Fumble: Missing requirements. See Design File.
+
+# 9 14
+
+- [ ] Complete Menu Page.
+      One item per view on main
