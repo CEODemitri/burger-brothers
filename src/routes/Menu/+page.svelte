@@ -206,13 +206,13 @@
 	}
 </script>
 
-<div class="flex-1 bg-[#000] mx-auto">
+<div class="flex-1 bg-[#000] mx-auto home">
 	<h1 class="text-3xl md:text-5xl lg:text-[6rem] leading-[1em] ff-serif text-center uppercase pt-8">
 		<span class="ff-sans">Brothers' </span>Menu
 	</h1>
-	<div class="content flex">
+	<div class="flex">
 		<!-- Sidebar Menu -->
-		<nav class="flex flex-col gap-4 bg-gray-900/50 ff-sans py-8 px-4 md:fixed">
+		<nav class="flex flex-col gap-4 bg-gray-900/50 ff-sans py-8 px-4 md:fixed rounded-tr-lg">
 			{#each Object.keys(categories) as category}
 				<button
 					on:click={() => (selectedCategory = category)}
@@ -222,16 +222,15 @@
 					{category}
 				</button>
 			{/each}
-			<!-- Main Content -->
 		</nav>
 
 		<div class="px-4 py-8 md:m-auto">
 			{#each categories[selectedCategory] as item}
-				<div class="flex items-center space-x-4 p-4 bg-gray-900/50 rounded-md">
+				<div class="flex flex-col md:flex-row items-center space-x-4 p-4 bg-gray-900/50 rounded-md">
 					<img src={item.src} alt={item.name} class="w-36 h-36 md:w-60 md:h-60 rounded-md" />
 					<div class="flex flex-col">
-						<h3 class="text-lg font-semibold text-white">{item.name}</h3>
-						<p class="text-sm text-gray-400">{item.description}</p>
+						<h3 class="text-lg font-semibold text-white ff-sans">{item.name}</h3>
+						<p class="text-sm text-gray-40 ff-body">{item.description}</p>
 						<p class="text-sm text-gray-400">{item.price}</p>
 						<div class="flex flex-col md:flex-row items-center">
 							<input
@@ -242,7 +241,8 @@
 							/>
 							<button
 								on:click={() => addToCart(item, item.quantity)}
-								class="ml-4 px-4 py-2 bg-gray-800 text-white rounded-md">Add to Cart</button
+								class="transition ease-in-out delay-100 ml-4 px-4 py-2 bg-gray-800 text-white rounded-md bg-[#cb5510d4] ff-serif text-sm hover:bg-accent duration-400"
+								>Add to Cart</button
 							>
 						</div>
 					</div>
@@ -252,8 +252,6 @@
 	</div>
 
 	<footer class="bg-gray-900/70 p-4 h-60">
-		<!-- ... (other HTML) -->
-
 		<div class="h-20 overflow-y-auto flex items-center">
 			<div class="flex space-x-2">
 				{#each cart as item}
@@ -269,7 +267,7 @@
 </div>
 
 <style>
-	main {
+	.home {
 		max-width: 1440px;
 	}
 </style>
