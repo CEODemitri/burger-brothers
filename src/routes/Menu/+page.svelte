@@ -1,85 +1,116 @@
 <script>
 	import { fade } from 'svelte/transition';
-	import MediumCards from '../../components/Cards/MediumCards.svelte'; // Assuming you have this component
+	import MediumCards from '../../components/Cards/MediumCards.svelte';
 
 	// Define card data for each category
 	const categories = {
 		Drinks: [
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Coke',
-				description: 'Refreshing soda.'
+				src: '/specials/drinks/blueberrySlush.png',
+				price: 5.99,
+				name: 'Blueberry Slush',
+				description: 'Big taste of blueberries from the gardens of Oz.'
 			},
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Pepsi',
-				description: 'Popular cola drink.'
+				src: '/specials/drinks/mangoTea.png',
+				price: 5.99,
+				name: 'Mango Sweet Tea',
+				description: 'Big taste of mangos from the Giants of Peru.'
 			},
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Water',
-				description: 'Purified water.'
+				src: '/specials/drinks/sLemonadeSlush.png',
+				price: 5.99,
+				name: 'Strawberry Slush',
+				description:
+					'Big taste of strawberries from the gardens of Athena. Cold and Sweet, oh just right'
 			},
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Juice',
-				description: 'Fresh fruit juice.'
+				src: '/specials/drinks/sLemonadeSlush.png',
+				price: 5.99,
+				name: 'Strawberry Slush',
+				description:
+					'Big taste of strawberries from the gardens of Athena. Cold and Sweet, oh just right'
+			},
+			{
+				src: '/specials/drinks/sLemonadeSlush.png',
+				price: 5.99,
+				name: 'Strawberry Slush',
+				description:
+					'Big taste of strawberries from the gardens of Athena. Cold and Sweet, oh just right'
 			}
 		],
 		Appetizers: [
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Spring Rolls',
-				description: 'Crispy and delicious.'
+				src: '/specials/appetizers/flower.png',
+				price: 22.99,
+				name: 'Cauliflower',
+				description:
+					'You smell me. Quinoa from the untapped valleys you and I never seen, across this earth. Finest ingredients.'
 			},
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Nachos',
-				description: 'Cheesy and spicy.'
+				src: '/specials/appetizers/pickles.png',
+				price: 14.99,
+				name: 'Fried Pickles',
+				description:
+					'You see me. Chops raised on our farms. If you know good food, what are we talking about, order now.'
 			},
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Mozzarella Sticks',
-				description: 'Fried cheese sticks.'
+				src: '/specials/appetizers/spinachDip.png',
+				price: 30.99,
+				name: 'Spinach Dip',
+				description:
+					'You feel me. All natural eggs, from the land, paired elegantly with fresh cut hashbrowns, twice.'
 			},
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Bruschetta',
-				description: 'Tomato and basil on toast.'
+				src: '/specials/appetizers/spinachDip.png',
+				price: 30.99,
+				name: 'Spinach Dip',
+				description:
+					'You feel me. All natural eggs, from the land, paired elegantly with fresh cut hashbrowns, twice.'
+			},
+			{
+				src: '/specials/appetizers/spinachDip.png',
+				price: 30.99,
+				name: 'Spinach Dip',
+				description:
+					'You feel me. All natural eggs, from the land, paired elegantly with fresh cut hashbrowns, twice.'
+			},
+			{
+				src: '/specials/appetizers/spinachDip.png',
+				price: 30.99,
+				name: 'Spinach Dip',
+				description:
+					'You feel me. All natural eggs, from the land, paired elegantly with fresh cut hashbrowns, twice.'
 			}
 		],
 		Entrees: [
 			{
 				src: '/specials/grill-quinoa.png',
 				price: 85.99,
-				name: 'Grilled Chicken',
-				description: 'Juicy grilled chicken.'
+				name: 'Grilled Quinoa',
+				description:
+					'You smell me. Quinoa from the untapped valleys you and I never seen, across this earth. Finest ingredients.'
 			},
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Beef Steak',
-				description: 'Tender and flavorful.'
+				src: '/specials/pork.png',
+				price: 45.99,
+				name: 'Pork Chop',
+				description:
+					'You see me. Chops raised on our farms. If you know good food, what are we talking about, order now.'
 			},
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Vegetarian Lasagna',
-				description: 'Hearty and satisfying.'
+				src: '/specials/bk.png',
+				price: 65.99,
+				name: 'Break Fast',
+				description:
+					'You feel me. All natural eggs, from the land, paired elegantly with fresh cut hashbrowns, twice.'
 			},
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Salmon Fillet',
-				description: 'Grilled to perfection.'
+				src: '/specials/bk.png',
+				price: 65.99,
+				name: 'Break Fast',
+				description:
+					'You feel me. All natural eggs, from the land, paired elegantly with fresh cut hashbrowns, twice.'
 			}
 		],
 		Feasts: [
@@ -110,28 +141,28 @@
 		],
 		Desserts: [
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Cheesecake',
-				description: 'Rich and creamy.'
+				src: '/specials/desserts/roseCheeseCake.png',
+				price: 7.99,
+				name: 'RoseCake',
+				description: 'Edible roses paired perfectly with lush cheesecake baked fresh every morning.'
 			},
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Brownies',
-				description: 'Chocolatey goodness.'
+				src: '/specials/desserts/chocolateGold.png',
+				price: 18.99,
+				name: 'Gold Chocolate',
+				description: 'I dare you. And say cheese with these.'
 			},
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Ice Cream',
-				description: 'Cold and sweet.'
+				src: '/specials/desserts/cashewCream.png',
+				price: 10.99,
+				name: 'Cashew Cream',
+				description: 'Tastyically fresh ice cream. Brilliance in every bite.'
 			},
 			{
-				src: '/specials/grill-quinoa.png',
-				price: 85.99,
-				name: 'Tiramisu',
-				description: 'Coffee-flavored treat.'
+				src: '/specials/desserts/cashewCream.png',
+				price: 10.99,
+				name: 'Cashew Cream',
+				description: 'Tastyically fresh ice cream. Brilliance in every bite.'
 			}
 		],
 		Seniors: [
@@ -163,128 +194,82 @@
 	};
 
 	let selectedCategory = 'Drinks'; // Default category
+	let cart = [];
 
-	function selectCategory(category) {
-		selectedCategory = category;
+	function addToCart(item, quantity) {
+		const existingItem = cart.find((i) => i.name === item.name);
+		if (existingItem) {
+			existingItem.quantity += quantity;
+		} else {
+			cart = [...cart, { ...item, quantity }];
+		}
 	}
 </script>
 
-<main class="flex-1 bg-[#000] mx-auto">
+<div class="flex-1 bg-[#000] mx-auto">
 	<h1 class="text-3xl md:text-5xl lg:text-[6rem] leading-[1em] ff-serif text-center uppercase pt-8">
 		<span class="ff-sans">Brothers' </span>Menu
 	</h1>
 	<div class="content flex">
 		<!-- Sidebar Menu -->
-		<ul class="menu menu-horizontal flex flex-col h-[70vh] bg-gray-900 text-white">
+		<nav class="flex flex-col gap-4 bg-gray-900/50 ff-sans py-8 px-4 md:fixed">
 			{#each Object.keys(categories) as category}
-				<li>
-					<div class="collapse collapse-plus">
-						<input
-							type="radio"
-							name="my-accordion-2"
-							id={category}
-							bind:group={selectedCategory}
-							value={category}
-							checked={selectedCategory === category}
-							on:change={() => selectCategory(category)}
-						/>
-						<label for={category} class="collapse-title font-medium cursor-pointer">
-							{category}
-						</label>
-						<div class="collapse-content p-4">
-							<p>{categories[category].length} items</p>
-						</div>
-					</div>
-				</li>
+				<button
+					on:click={() => (selectedCategory = category)}
+					class:bg-gray-500={selectedCategory === category}
+					class="text-grey-800 px-4 py-2 rounded-md"
+				>
+					{category}
+				</button>
 			{/each}
-		</ul>
+			<!-- Main Content -->
+		</nav>
 
-		<!-- Main Content -->
-		<article class="w-4/5 h-[70vh] pt-8">
-			<div class="hero">
-				<div class="hero-content text-center">
-					<div class="max-w-md">
-						<h1 class="text-5xl font-bold">{selectedCategory}</h1>
-						<p class="py-6">
-							Here are the items available in the {selectedCategory} category.
-						</p>
-						<!-- Display cards for the selected category -->
-						<div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
-							{#each categories[selectedCategory] as item}
-								<MediumCards {item} />
-							{/each}
+		<div class="px-4 py-8 md:m-auto">
+			{#each categories[selectedCategory] as item}
+				<div class="flex items-center space-x-4 p-4 bg-gray-900/50 rounded-md">
+					<img src={item.src} alt={item.name} class="w-36 h-36 md:w-60 md:h-60 rounded-md" />
+					<div class="flex flex-col">
+						<h3 class="text-lg font-semibold text-white">{item.name}</h3>
+						<p class="text-sm text-gray-400">{item.description}</p>
+						<p class="text-sm text-gray-400">{item.price}</p>
+						<div class="flex flex-col md:flex-row items-center">
+							<input
+								type="number"
+								min="1"
+								bind:value={item.quantity}
+								class="w-16 text-center text-gray-800"
+							/>
+							<button
+								on:click={() => addToCart(item, item.quantity)}
+								class="ml-4 px-4 py-2 bg-gray-800 text-white rounded-md">Add to Cart</button
+							>
 						</div>
 					</div>
 				</div>
-			</div>
-		</article>
+			{/each}
+		</div>
 	</div>
 
 	<footer class="bg-gray-900/70 p-4 h-60">
-		<div class="flex items-center justify-between">
-			<h2 class="text-lg font-semibold text-white">Cart</h2>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="24"
-				height="24"
-				viewBox="0 0 24 24"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="2"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				class="h-6 w-6 text-white"
-			>
-				<circle cx="8" cy="21" r="1"></circle>
-				<circle cx="19" cy="21" r="1"></circle>
-				<path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
-				></path>
-			</svg>
-		</div>
-		<hr class="my-2 border-t border-gray-200" />
+		<!-- ... (other HTML) -->
+
 		<div class="h-20 overflow-y-auto flex items-center">
 			<div class="flex space-x-2">
-				<img
-					src="/placeholder.svg?height=40&width=40"
-					alt="Item 1"
-					class="w-10 h-10 rounded-full"
-				/>
-				<img
-					src="/placeholder.svg?height=40&width=40"
-					alt="Item 2"
-					class="w-10 h-10 rounded-full"
-				/>
-				<img
-					src="/placeholder.svg?height=40&width=40"
-					alt="Item 3"
-					class="w-10 h-10 rounded-full"
-				/>
-				<img
-					src="/placeholder.svg?height=40&width=40"
-					alt="Item 4"
-					class="w-10 h-10 rounded-full"
-				/>
-				<img
-					src="/placeholder.svg?height=40&width=40"
-					alt="Item 5"
-					class="w-10 h-10 rounded-full"
-				/>
+				{#each cart as item}
+					<div class="flex flex-col items-center space-y-2 px-4 py-2 bg-gray-800 rounded-md">
+						<img src={item.src} alt={item.name} class="w-16 h-16 rounded-md" />
+						<p class="text-sm text-white">{item.name}</p>
+						<p class="text-sm text-white">{item.price} x {item.quantity}</p>
+					</div>
+				{/each}
 			</div>
 		</div>
 	</footer>
-</main>
+</div>
 
 <style>
 	main {
 		max-width: 1440px;
-	}
-
-	.dot {
-		width: 10px;
-		height: 10px;
-		border-radius: 50%;
-		background-color: #000;
-		display: inline-block;
-		margin: 0 5px;
 	}
 </style>

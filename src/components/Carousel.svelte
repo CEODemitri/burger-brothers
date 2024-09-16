@@ -1,25 +1,63 @@
-<section>
-    <div class="carousel carousel-end rounded-box">
-        <div class="carousel-item">
-          <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Drink" />
-        </div> 
-        <div class="carousel-item">
-          <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Drink" />
-        </div> 
-        <div class="carousel-item">
-          <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Drink" />
-        </div> 
-        <div class="carousel-item">
-          <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Drink" />
-        </div> 
-        <div class="carousel-item">
-          <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Drink" />
-        </div> 
-        <div class="carousel-item">
-          <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Drink" />
-        </div> 
-        <div class="carousel-item">
-          <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Drink" />
-        </div>
-      </div>
-</section>
+<script>
+	import { onMount } from 'svelte';
+	import Slick from 'slick-slider';
+
+	export let items;
+
+	let slick;
+
+	onMount(() => {
+		slick = new Slick('.carousel', {
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			arrows: true,
+			dots: true,
+			responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+	});
+
+	onDestroy(() => {
+		if (slick) {
+			slick.destroy();
+		}
+	});
+</script>
+
+<div class="carousel">
+	{#each items as item}
+		<div class="slide">
+			<slot name="item" {item} />
+		</div>
+	{/each}
+</div>
+
+<style>
+	.carousel {
+		/* Add your carousel styles here */
+	}
+
+	.slick-prev,
+	.slick-next {
+		/* Add your arrow button styles here */
+	}
+
+	.slick-dots {
+		/* Add your dot button styles here */
+	}
+</style>
